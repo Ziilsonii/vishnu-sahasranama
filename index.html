@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>श्री विष्णु सहस्रनाम</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;600;700&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{min-height:100vh;background:#0c0a14;color:#e8d5a0;font-family:'Noto Serif Devanagari',Georgia,serif}
+::-webkit-scrollbar{width:4px}::-webkit-scrollbar-thumb{background:#6b4f00;border-radius:2px}
+#hdr{background:linear-gradient(180deg,rgba(120,80,0,.25),transparent);border-bottom:1px solid rgba(200,150,0,.2);padding:26px 14px 18px;text-align:center}
+h1{font-size:clamp(1.4rem,4vw,2.3rem);font-weight:700;background:linear-gradient(120deg,#FFD700,#FFA040,#FFD700);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:5px}
+.s1{color:#b89040;font-size:.88rem;margin-bottom:2px}.s2{color:#705a30;font-size:.76rem}
+.mg{margin:12px auto 0;max-width:500px;padding:8px 14px;background:rgba(255,200,0,.06);border:1px solid rgba(255,200,0,.15);border-radius:7px;font-size:.83rem;color:#c4a040;font-style:italic;line-height:1.8}
+#ctrl{max-width:820px;margin:0 auto;padding:13px 12px 0}
+#srch{width:100%;padding:10px 13px;background:rgba(255,255,255,.05);border:1px solid rgba(200,150,0,.2);border-radius:7px;color:#e8d5a0;font-size:.88rem;font-family:inherit;margin-bottom:9px}
+#srch:focus{outline:none;border-color:rgba(255,200,0,.5)}
+#srch::placeholder{color:rgba(200,160,60,.4)}
+.brow{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:11px}
+.bdg{padding:4px 10px;background:rgba(200,150,0,.08);border:1px solid rgba(200,150,0,.15);border-radius:5px;font-size:.76rem;color:#a08030}
+#lst{max-width:820px;margin:0 auto;padding:0 12px 28px}
+.card{margin-bottom:6px;border-radius:8px;overflow:hidden;border:1px solid rgba(200,150,0,.12);background:rgba(255,255,255,.025)}
+.card:hover{border-color:rgba(255,180,0,.28)}
+.card.open{border-color:rgba(255,165,0,.45);background:linear-gradient(135deg,rgba(180,100,0,.09),rgba(100,60,0,.06));box-shadow:0 0 16px rgba(255,150,0,.07)}
+.cbtn{width:100%;display:flex;align-items:flex-start;gap:10px;padding:11px 13px;background:none;border:none;cursor:pointer;color:inherit;font-family:inherit;text-align:left}
+.num{min-width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.68rem;font-weight:700;font-family:sans-serif;flex-shrink:0;background:rgba(255,200,0,.12);color:#FFD700;transition:all .22s;margin-top:1px}
+.card.open .num{background:linear-gradient(135deg,#FFD700,#FF8C00);color:#1a0800}
+.st{flex:1;font-size:.86rem;line-height:1.7;color:#d4c080}
+.card.open .st{color:#f0dfa0}
+.arr{color:#FFD700;font-size:.82rem;flex-shrink:0;margin-top:8px;transition:transform .22s;display:inline-block}
+.card.open .arr{transform:rotate(180deg)}
+.mp{border-top:1px solid rgba(255,200,0,.1);padding:11px 13px 13px 55px}
+.ml{margin-bottom:6px;font-size:.63rem;color:#6a5a30;letter-spacing:1.3px;text-transform:uppercase;font-family:sans-serif}
+.mt{font-size:.85rem;line-height:1.95;color:#d0ba80}
+.mt b{color:#FFD700;font-weight:600}
+#ftr{max-width:820px;margin:10px auto 26px;padding:0 12px}
+.fb{padding:17px;background:rgba(200,150,0,.07);border:1px solid rgba(200,150,0,.2);border-radius:9px;text-align:center}
+.ft{color:#FFD700;font-size:.88rem;margin-bottom:8px}
+.fp{font-size:.78rem;color:#907030;line-height:1.8;margin-bottom:9px}
+.fn{font-size:.82rem;color:#a08040;line-height:1.8}
+.fo{margin-top:9px;color:#FFD700;font-size:.92rem}
+</style>
+</head>
+<body>
+<div id="hdr">
+<div style="font-size:1.9rem;margin-bottom:5px">🪷</div>
+<h1>श्री विष्णु सहस्रनाम</h1>
+<p class="s1">भगवान विष्णु के १००० दिव्य नाम</p>
+<p class="s2">महाभारत · अनुशासनपर्व · भीष्म–युधिष्ठिर संवाद</p>
+<div class="mg">नमः समस्त भूतानां आदिभूताय भूभृते ।<br>अनेकरूपरूपाय विष्णवे प्रभविष्णवे ॥</div>
+</div>
+<div id="ctrl">
+<input id="srch" type="text" placeholder="🔍  खोजें — श्लोक संख्या, नाम या अर्थ..." oninput="dosearch(this.value)">
+<div class="brow">
+<span class="bdg" id="bv">📖 108/108 श्लोक</span>
+<span class="bdg">✅ सभी 108 हिंदी अर्थ उपलब्ध</span>
+<span class="bdg">🔍 खोज सक्षम</span>
+</div>
+</div>
+<div id="lst"><div class="card" id="c1">
+<button class="cbtn" onclick="tog(1)">
+<span class="num" id="b1">1</span>
+<div style="flex:1"><p class="st">विश्वं विष्णुर्वषट्कारो भूतभव्यभवत्प्रभुः । भूतकृद्भूतभृद्भावो भूतात्मा भूतभावनः ॥१॥</p></div>
+<span class="arr" id="a1">&#9660;</span>
+</button>
+<div class="mp" id="p1" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 1</p>
+<div class="mt"><b>विश्वम्</b> — समस्त ब्रह्माण्ड के स्वरूप<br><b>विष्णुः</b> — सर्वव्यापी<br><b>वषट्कारः</b> — यज्ञ मंत्र के देवता<br><b>भूतभव्यभवत्प्रभुः</b> — तीनों काल के स्वामी<br><b>भूतकृत्</b> — समस्त प्राणियों के निर्माता<br><b>भूतभृत्</b> — समस्त प्राणियों के पालक<br><b>भावः</b> — स्वयंसिद्ध सत्ता<br><b>भूतात्मा</b> — समस्त प्राणियों की आत्मा<br><b>भूतभावनः</b> — समस्त प्राणियों को उत्पन्न करने वाले</div>
+</div>
+</div>
+<div class="card" id="c2">
+<button class="cbtn" onclick="tog(2)">
+<span class="num" id="b2">2</span>
+<div style="flex:1"><p class="st">पूतात्मा परमात्मा च मुक्तानां परमागतिः । अव्ययः पुरुषः साक्षी क्षेत्रज्ञोऽक्षर एव च ॥२॥</p></div>
+<span class="arr" id="a2">&#9660;</span>
+</button>
+<div class="mp" id="p2" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 2</p>
+<div class="mt"><b>पूतात्मा</b> — परम पवित्र आत्मा<br><b>परमात्मा</b> — सर्वोच्च आत्मा<br><b>मुक्तानां परमागतिः</b> — मुक्त आत्माओं की परम गति<br><b>अव्ययः</b> — अविनाशी<br><b>पुरुषः</b> — परम पुरुष<br><b>साक्षी</b> — सबके साक्षी<br><b>क्षेत्रज्ञः</b> — शरीर को जानने वाले<br><b>अक्षरः</b> — अक्षर, अविनाशी</div>
+</div>
+</div>
+<div class="card" id="c3">
+<button class="cbtn" onclick="tog(3)">
+<span class="num" id="b3">3</span>
+<div style="flex:1"><p class="st">योगो योगविदां नेता प्रधानपुरुषेश्वरः । नारसिंहवपुः श्रीमान् केशवः पुरुषोत्तमः ॥३॥</p></div>
+<span class="arr" id="a3">&#9660;</span>
+</button>
+<div class="mp" id="p3" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 3</p>
+<div class="mt"><b>योगः</b> — योगस्वरूप<br><b>योगविदां नेता</b> — योगियों के नेता<br><b>प्रधानपुरुषेश्वरः</b> — प्रकृति और पुरुष के ईश्वर<br><b>नारसिंहवपुः</b> — नरसिंह अवतार<br><b>श्रीमान्</b> — लक्ष्मीपति<br><b>केशवः</b> — सुंदर केशों वाले<br><b>पुरुषोत्तमः</b> — पुरुषों में उत्तम</div>
+</div>
+</div>
+<div class="card" id="c4">
+<button class="cbtn" onclick="tog(4)">
+<span class="num" id="b4">4</span>
+<div style="flex:1"><p class="st">सर्वः शर्वः शिवः स्थाणुर्भूतादिर्निधिरव्ययः । सम्भवो भावनो भर्ता प्रभवः प्रभुरीश्वरः ॥४॥</p></div>
+<span class="arr" id="a4">&#9660;</span>
+</button>
+<div class="mp" id="p4" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 4</p>
+<div class="mt"><b>सर्वः</b> — सर्वस्वरूप<br><b>शर्वः</b> — पाप नाशक<br><b>शिवः</b> — कल्याणस्वरूप<br><b>स्थाणुः</b> — स्थिर एवं अचल<br><b>भूतादिः</b> — समस्त भूतों के आदि<br><b>निधिरव्ययः</b> — अविनाशी निधि<br><b>सम्भवः</b> — इच्छानुसार प्रकट होने वाले<br><b>भावनः</b> — सबका पालन करने वाले<br><b>भर्ता</b> — सबका भरण करने वाले<br><b>प्रभवः</b> — सबकी उत्पत्ति के कारण<br><b>प्रभुः</b> — सर्वसमर्थ<br><b>ईश्वरः</b> — सबके नियंता</div>
+</div>
+</div>
+<div class="card" id="c5">
+<button class="cbtn" onclick="tog(5)">
+<span class="num" id="b5">5</span>
+<div style="flex:1"><p class="st">स्वयम्भूः शम्भुरादित्यः पुष्कराक्षो महास्वनः । अनादिनिधनो धाता विधाता धातुरुत्तमः ॥५॥</p></div>
+<span class="arr" id="a5">&#9660;</span>
+</button>
+<div class="mp" id="p5" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 5</p>
+<div class="mt"><b>स्वयम्भूः</b> — स्वयं प्रकट, अजन्मा<br><b>शम्भुः</b> — सुख देने वाले<br><b>आदित्यः</b> — द्वादश आदित्य स्वरूप<br><b>पुष्कराक्षः</b> — कमल के समान नेत्र<br><b>महास्वनः</b> — महान ध्वनि वाले<br><b>अनादिनिधनः</b> — जिनका न आदि है न अंत<br><b>धाता</b> — सबको धारण करने वाले<br><b>विधाता</b> — विधि के निर्माता<br><b>धातुरुत्तमः</b> — सभी धातुओं में श्रेष्ठ</div>
+</div>
+</div>
+<div class="card" id="c6">
+<button class="cbtn" onclick="tog(6)">
+<span class="num" id="b6">6</span>
+<div style="flex:1"><p class="st">अप्रमेयो हृषीकेशः पद्मनाभोऽमरप्रभुः । विश्वकर्मा मनुस्त्वष्टा स्थविष्ठः स्थविरो ध्रुवः ॥६॥</p></div>
+<span class="arr" id="a6">&#9660;</span>
+</button>
+<div class="mp" id="p6" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 6</p>
+<div class="mt"><b>अप्रमेयः</b> — प्रमाण से परे<br><b>हृषीकेशः</b> — इंद्रियों के स्वामी<br><b>पद्मनाभः</b> — जिनकी नाभि से कमल उत्पन्न हुआ<br><b>अमरप्रभुः</b> — देवताओं के प्रभु<br><b>विश्वकर्मा</b> — ब्रह्माण्ड के निर्माता<br><b>मनुः</b> — मनुस्वरूप<br><b>त्वष्टा</b> — सभी रूपों के निर्माता<br><b>स्थविष्ठः</b> — विशालतम<br><b>स्थविरः</b> — सनातन<br><b>ध्रुवः</b> — स्थिर एवं ध्रुव</div>
+</div>
+</div>
+<div class="card" id="c7">
+<button class="cbtn" onclick="tog(7)">
+<span class="num" id="b7">7</span>
+<div style="flex:1"><p class="st">अग्राह्यः शाश्वतः कृष्णो लोहिताक्षः प्रतर्दनः । प्रभूतस्त्रिककुब्धाम पवित्रं मङ्गलं परम् ॥७॥</p></div>
+<span class="arr" id="a7">&#9660;</span>
+</button>
+<div class="mp" id="p7" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 7</p>
+<div class="mt"><b>अग्राह्यः</b> — इंद्रियों से परे<br><b>शाश्वतः</b> — सदा से हैं, सदा रहेंगे<br><b>कृष्णः</b> — श्यामवर्ण, आनंदस्वरूप<br><b>लोहिताक्षः</b> — लाल कमल के समान नेत्र<br><b>प्रतर्दनः</b> — दुष्टों का संहार करने वाले<br><b>प्रभूतः</b> — सर्वसमृद्ध<br><b>त्रिककुब्धाम</b> — तीनों दिशाओं के आश्रय<br><b>पवित्रम्</b> — परम पवित्र<br><b>मङ्गलं परम्</b> — परम मंगलस्वरूप</div>
+</div>
+</div>
+<div class="card" id="c8">
+<button class="cbtn" onclick="tog(8)">
+<span class="num" id="b8">8</span>
+<div style="flex:1"><p class="st">ईशानः प्राणदः प्राणो ज्येष्ठः श्रेष्ठः प्रजापतिः । हिरण्यगर्भो भूगर्भो माधवो मधुसूदनः ॥८॥</p></div>
+<span class="arr" id="a8">&#9660;</span>
+</button>
+<div class="mp" id="p8" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 8</p>
+<div class="mt"><b>ईशानः</b> — सबके शासक<br><b>प्राणदः</b> — प्राण देने वाले<br><b>प्राणः</b> — प्राणस्वरूप<br><b>ज्येष्ठः</b> — सबसे वरिष्ठ<br><b>श्रेष्ठः</b> — सबसे श्रेष्ठ<br><b>प्रजापतिः</b> — प्रजा के पालक<br><b>हिरण्यगर्भः</b> — जिनके गर्भ में ब्रह्माण्ड है<br><b>भूगर्भः</b> — पृथ्वी को धारण करने वाले<br><b>माधवः</b> — लक्ष्मीपति<br><b>मधुसूदनः</b> — मधु दैत्य का वध करने वाले</div>
+</div>
+</div>
+<div class="card" id="c9">
+<button class="cbtn" onclick="tog(9)">
+<span class="num" id="b9">9</span>
+<div style="flex:1"><p class="st">ईश्वरो विक्रमी धन्वी मेधावी विक्रमः क्रमः । अनुत्तमो दुराधर्षः कृतज्ञः कृतिरात्मवान् ॥९॥</p></div>
+<span class="arr" id="a9">&#9660;</span>
+</button>
+<div class="mp" id="p9" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 9</p>
+<div class="mt"><b>ईश्वरः</b> — परम ऐश्वर्यशाली<br><b>विक्रमी</b> — पराक्रमी<br><b>धन्वी</b> — धनुषधारी<br><b>मेधावी</b> — असाधारण बुद्धि वाले<br><b>विक्रमः</b> — पराक्रमस्वरूप<br><b>क्रमः</b> — सब क्रियाओं के नियामक<br><b>अनुत्तमः</b> — जिनसे श्रेष्ठ कोई नहीं<br><b>दुराधर्षः</b> — अपराजेय<br><b>कृतज्ञः</b> — भक्तों की सेवा जानने वाले<br><b>कृतिः</b> — कर्मों के फलदाता<br><b>आत्मवान्</b> — स्वयं में प्रतिष्ठित</div>
+</div>
+</div>
+<div class="card" id="c10">
+<button class="cbtn" onclick="tog(10)">
+<span class="num" id="b10">10</span>
+<div style="flex:1"><p class="st">सुरेशः शरणं शर्म विश्वरेताः प्रजाभवः । अहः संवत्सरो व्यालः प्रत्ययः सर्वदर्शनः ॥१०॥</p></div>
+<span class="arr" id="a10">&#9660;</span>
+</button>
+<div class="mp" id="p10" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 10</p>
+<div class="mt"><b>सुरेशः</b> — देवताओं के ईश्वर<br><b>शरणम्</b> — शरण देने वाले<br><b>शर्म</b> — आनंदस्वरूप<br><b>विश्वरेताः</b> — ब्रह्माण्ड के बीज<br><b>प्रजाभवः</b> — जिनसे सब प्रजा उत्पन्न होती है<br><b>अहः</b> — दिन के स्वरूप<br><b>संवत्सरः</b> — वर्ष के स्वरूप<br><b>व्यालः</b> — दुर्जेय<br><b>प्रत्ययः</b> — विश्वास के पात्र<br><b>सर्वदर्शनः</b> — सर्वदर्शी</div>
+</div>
+</div>
+<div class="card" id="c11">
+<button class="cbtn" onclick="tog(11)">
+<span class="num" id="b11">11</span>
+<div style="flex:1"><p class="st">अजः सर्वेश्वरः सिद्धः सिद्धिः सर्वादिरच्युतः । वृषाकपिरमेयात्मा सर्वयोगविनिःसृतः ॥११॥</p></div>
+<span class="arr" id="a11">&#9660;</span>
+</button>
+<div class="mp" id="p11" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 11</p>
+<div class="mt"><b>अजः</b> — अजन्मा<br><b>सर्वेश्वरः</b> — सबके ईश्वर<br><b>सिद्धः</b> — सिद्धस्वरूप<br><b>सिद्धिः</b> — सिद्धि प्रदान करने वाले<br><b>सर्वादिः</b> — सबके आदि<br><b>अच्युतः</b> — कभी च्युत न होने वाले<br><b>वृषाकपिः</b> — धर्म और वराह के रूप<br><b>अमेयात्मा</b> — अपरिमेय आत्मा<br><b>सर्वयोगविनिःसृतः</b> — सभी योगों से परे</div>
+</div>
+</div>
+<div class="card" id="c12">
+<button class="cbtn" onclick="tog(12)">
+<span class="num" id="b12">12</span>
+<div style="flex:1"><p class="st">वसुर्वसुमनाः सत्यः समात्मा सम्मितः समः । अमोघः पुण्डरीकाक्षो वृषकर्मा वृषाकृतिः ॥१२॥</p></div>
+<span class="arr" id="a12">&#9660;</span>
+</button>
+<div class="mp" id="p12" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 12</p>
+<div class="mt"><b>वसुः</b> — सब में निवास करने वाले<br><b>वसुमनाः</b> — उदार मन वाले<br><b>सत्यः</b> — सत्यस्वरूप<br><b>समात्मा</b> — समदर्शी<br><b>सम्मितः</b> — वेद में वर्णित<br><b>समः</b> — सम<br><b>अमोघः</b> — जिनकी पूजा निष्फल नहीं<br><b>पुण्डरीकाक्षः</b> — कमल के समान नेत्र वाले<br><b>वृषकर्मा</b> — धर्ममय कर्म वाले<br><b>वृषाकृतिः</b> — धर्म के रूप</div>
+</div>
+</div>
+<div class="card" id="c13">
+<button class="cbtn" onclick="tog(13)">
+<span class="num" id="b13">13</span>
+<div style="flex:1"><p class="st">रुद्रो बहुशिरा बभ्रुर्विश्वयोनिः शुचिश्रवाः । अमृतः शाश्वतस्थाणुर्वरारोहो महातपाः ॥१३॥</p></div>
+<span class="arr" id="a13">&#9660;</span>
+</button>
+<div class="mp" id="p13" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 13</p>
+<div class="mt"><b>रुद्रः</b> — दुःख का नाश करने वाले<br><b>बहुशिराः</b> — अनेक रूपों वाले<br><b>बभ्रुः</b> — सबका भरण करने वाले<br><b>विश्वयोनिः</b> — ब्रह्माण्ड के उद्गम<br><b>शुचिश्रवाः</b> — पवित्र नाम वाले<br><b>अमृतः</b> — अमृतस्वरूप<br><b>शाश्वतस्थाणुः</b> — सदा स्थिर<br><b>वरारोहः</b> — श्रेष्ठ गति देने वाले<br><b>महातपाः</b> — महान तपस्वी</div>
+</div>
+</div>
+<div class="card" id="c14">
+<button class="cbtn" onclick="tog(14)">
+<span class="num" id="b14">14</span>
+<div style="flex:1"><p class="st">सर्वगः सर्वविद्भानुर्विष्वक्सेनो जनार्दनः । वेदो वेदविदव्यङ्गो वेदाङ्गो वेदवित् कविः ॥१४॥</p></div>
+<span class="arr" id="a14">&#9660;</span>
+</button>
+<div class="mp" id="p14" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 14</p>
+<div class="mt"><b>सर्वगः</b> — सर्वत्र व्याप्त<br><b>सर्ववित्</b> — सबको जानने वाले<br><b>भानुः</b> — प्रकाशस्वरूप<br><b>विष्वक्सेनः</b> — जिनकी सेना सर्वत्र है<br><b>जनार्दनः</b> — दुष्टों को दंड और भक्तों की रक्षा करने वाले<br><b>वेदः</b> — वेदस्वरूप<br><b>वेदविद्</b> — वेद जानने वाले<br><b>अव्यङ्गः</b> — पूर्ण<br><b>वेदाङ्गः</b> — जिनके अंग वेद हैं<br><b>कविः</b> — सर्वद्रष्टा कवि</div>
+</div>
+</div>
+<div class="card" id="c15">
+<button class="cbtn" onclick="tog(15)">
+<span class="num" id="b15">15</span>
+<div style="flex:1"><p class="st">लोकाध्यक्षः सुराध्यक्षो धर्माध्यक्षः कृताकृतः । चतुरात्मा चतुर्व्यूहश्चतुर्दंष्ट्रश्चतुर्भुजः ॥१५॥</p></div>
+<span class="arr" id="a15">&#9660;</span>
+</button>
+<div class="mp" id="p15" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 15</p>
+<div class="mt"><b>लोकाध्यक्षः</b> — लोकों के अध्यक्ष<br><b>सुराध्यक्षः</b> — देवताओं के अध्यक्ष<br><b>धर्माध्यक्षः</b> — धर्म के अध्यक्ष<br><b>कृताकृतः</b> — कार्य और कारण दोनों<br><b>चतुरात्मा</b> — चार रूपों में विभक्त<br><b>चतुर्व्यूहः</b> — वासुदेव, संकर्षण, प्रद्युम्न, अनिरुद्ध<br><b>चतुर्दंष्ट्रः</b> — नरसिंह के चार दाँत<br><b>चतुर्भुजः</b> — चार भुजाओं वाले</div>
+</div>
+</div>
+<div class="card" id="c16">
+<button class="cbtn" onclick="tog(16)">
+<span class="num" id="b16">16</span>
+<div style="flex:1"><p class="st">भ्राजिष्णुर्भोजनं भोक्ता सहिष्णुर्जगदादिजः । अनघो विजयो जेता विश्वयोनिः पुनर्वसुः ॥१६॥</p></div>
+<span class="arr" id="a16">&#9660;</span>
+</button>
+<div class="mp" id="p16" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 16</p>
+<div class="mt"><b>भ्राजिष्णुः</b> — स्वयंप्रकाशित<br><b>भोजनम्</b> — अनुभव के विषय<br><b>भोक्ता</b> — सबका उपभोग करने वाले<br><b>सहिष्णुः</b> — सबका सहन करने वाले<br><b>जगदादिजः</b> — जगत के आदि में प्रकट<br><b>अनघः</b> — पापरहित<br><b>विजयः</b> — सदा विजयी<br><b>जेता</b> — सबको जीतने वाले<br><b>विश्वयोनिः</b> — विश्व के कारण<br><b>पुनर्वसुः</b> — बार-बार प्रकट होने वाले</div>
+</div>
+</div>
+<div class="card" id="c17">
+<button class="cbtn" onclick="tog(17)">
+<span class="num" id="b17">17</span>
+<div style="flex:1"><p class="st">उपेन्द्रो वामनः प्रांशुरमोघः शुचिरूर्जितः । अतीन्द्रः संग्रहः सर्गो धृतात्मा नियमो यमः ॥१७॥</p></div>
+<span class="arr" id="a17">&#9660;</span>
+</button>
+<div class="mp" id="p17" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 17</p>
+<div class="mt"><b>उपेन्द्रः</b> — इंद्र के अनुज वामन<br><b>वामनः</b> — वामन अवतार<br><b>प्रांशुः</b> — अत्यंत ऊँचे<br><b>अमोघः</b> — जिनकी लीला निष्फल नहीं<br><b>शुचिः</b> — पवित्र<br><b>ऊर्जितः</b> — महाशक्तिशाली<br><b>अतीन्द्रः</b> — इंद्र से परे<br><b>संग्रहः</b> — सबका संग्रह करने वाले<br><b>सर्गः</b> — सृष्टि के कर्ता<br><b>धृतात्मा</b> — अपने स्वरूप में स्थित<br><b>नियमः</b> — नियम के स्वरूप<br><b>यमः</b> — नियंत्रण करने वाले</div>
+</div>
+</div>
+<div class="card" id="c18">
+<button class="cbtn" onclick="tog(18)">
+<span class="num" id="b18">18</span>
+<div style="flex:1"><p class="st">वेद्यो वैद्यः सदायोगी वीरहा माधवो मधुः । अतीन्द्रियो महामायो महोत्साहो महाबलः ॥१८॥</p></div>
+<span class="arr" id="a18">&#9660;</span>
+</button>
+<div class="mp" id="p18" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 18</p>
+<div class="mt"><b>वेद्यः</b> — जानने योग्य<br><b>वैद्यः</b> — महावैद्य<br><b>सदायोगी</b> — सदा योग में स्थित<br><b>वीरहा</b> — वीर दैत्यों का नाश करने वाले<br><b>माधवः</b> — वसंत के स्वामी<br><b>मधुः</b> — मधुर<br><b>अतीन्द्रियः</b> — इंद्रियों से परे<br><b>महामायः</b> — महामाया के स्वामी<br><b>महोत्साहः</b> — महान उत्साह वाले<br><b>महाबलः</b> — महान बलशाली</div>
+</div>
+</div>
+<div class="card" id="c19">
+<button class="cbtn" onclick="tog(19)">
+<span class="num" id="b19">19</span>
+<div style="flex:1"><p class="st">महाबुद्धिर्महावीर्यो महाशक्तिर्महाद्युतिः । अनिर्देश्यवपुः श्रीमानमेयात्मा महाद्रिधृक् ॥१९॥</p></div>
+<span class="arr" id="a19">&#9660;</span>
+</button>
+<div class="mp" id="p19" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 19</p>
+<div class="mt"><b>महाबुद्धिः</b> — महान बुद्धि वाले<br><b>महावीर्यः</b> — महान वीर्य वाले<br><b>महाशक्तिः</b> — महाशक्ति संपन्न<br><b>महाद्युतिः</b> — महान तेज वाले<br><b>अनिर्देश्यवपुः</b> — अवर्णनीय शरीर वाले<br><b>श्रीमान्</b> — ऐश्वर्यशाली<br><b>अमेयात्मा</b> — अपरिमेय आत्मा<br><b>महाद्रिधृक्</b> — गोवर्धन पर्वत उठाने वाले</div>
+</div>
+</div>
+<div class="card" id="c20">
+<button class="cbtn" onclick="tog(20)">
+<span class="num" id="b20">20</span>
+<div style="flex:1"><p class="st">महेष्वासो महीभर्ता श्रीनिवासः सतांगतिः । अनिरुद्धः सुरानन्दो गोविन्दो गोविदां पतिः ॥२०॥</p></div>
+<span class="arr" id="a20">&#9660;</span>
+</button>
+<div class="mp" id="p20" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 20</p>
+<div class="mt"><b>महेष्वासः</b> — महान धनुषधारी<br><b>महीभर्ता</b> — पृथ्वी के भरणकर्ता<br><b>श्रीनिवासः</b> — जिनमें लक्ष्मी निवास करती हैं<br><b>सतांगतिः</b> — सज्जनों की गति<br><b>अनिरुद्धः</b> — जिन्हें कोई रोक नहीं सकता<br><b>सुरानन्दः</b> — देवताओं को आनंद देने वाले<br><b>गोविन्दः</b> — गायों, वेदों और पृथ्वी के रक्षक<br><b>गोविदां पतिः</b> — वेद जानने वालों के पति</div>
+</div>
+</div>
+<div class="card" id="c21">
+<button class="cbtn" onclick="tog(21)">
+<span class="num" id="b21">21</span>
+<div style="flex:1"><p class="st">मरीचिर्दमनो हंसः सुपर्णो भुजगोत्तमः । हिरण्यनाभः सुतपाः पद्मनाभः प्रजापतिः ॥२१॥</p></div>
+<span class="arr" id="a21">&#9660;</span>
+</button>
+<div class="mp" id="p21" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 21</p>
+<div class="mt"><b>मरीचिः</b> — प्रकाश किरण स्वरूप<br><b>दमनः</b> — दुष्टों का दमन करने वाले<br><b>हंसः</b> — हंस स्वरूप<br><b>सुपर्णः</b> — गरुड़ पर विराजमान<br><b>भुजगोत्तमः</b> — शेषनाग पर विराजमान<br><b>हिरण्यनाभः</b> — स्वर्णिम नाभि वाले<br><b>सुतपाः</b> — उत्तम तपस्वी<br><b>पद्मनाभः</b> — नाभि से कमल उत्पन्न<br><b>प्रजापतिः</b> — सब प्रजाओं के पालक</div>
+</div>
+</div>
+<div class="card" id="c22">
+<button class="cbtn" onclick="tog(22)">
+<span class="num" id="b22">22</span>
+<div style="flex:1"><p class="st">अमृत्युः सर्वदृक् सिंहः सन्धाता सन्धिमान् स्थिरः । अजो दुर्मर्षणः शास्ता विश्रुतात्मा सुरारिहा ॥२२॥</p></div>
+<span class="arr" id="a22">&#9660;</span>
+</button>
+<div class="mp" id="p22" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 22</p>
+<div class="mt"><b>अमृत्युः</b> — मृत्युरहित<br><b>सर्वदृक्</b> — सबको देखने वाले<br><b>सिंहः</b> — सिंह के समान पराक्रमी<br><b>सन्धाता</b> — सबको एकत्र करने वाले<br><b>सन्धिमान्</b> — संधि करने में समर्थ<br><b>स्थिरः</b> — स्थिर<br><b>अजः</b> — अजन्मा<br><b>दुर्मर्षणः</b> — जिन्हें सहना असंभव<br><b>शास्ता</b> — सबके शासक<br><b>विश्रुतात्मा</b> — विख्यात आत्मा<br><b>सुरारिहा</b> — देव शत्रुओं का नाश करने वाले</div>
+</div>
+</div>
+<div class="card" id="c23">
+<button class="cbtn" onclick="tog(23)">
+<span class="num" id="b23">23</span>
+<div style="flex:1"><p class="st">गुरुर्गुरुतमो धाम सत्यः सत्यपराक्रमः । निमिषोऽनिमिषः स्रग्वी वाचस्पतिरुदारधीः ॥२३॥</p></div>
+<span class="arr" id="a23">&#9660;</span>
+</button>
+<div class="mp" id="p23" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 23</p>
+<div class="mt"><b>गुरुः</b> — सबके गुरु<br><b>गुरुतमः</b> — सबसे महान गुरु<br><b>धाम</b> — परम धाम<br><b>सत्यः</b> — सत्यस्वरूप<br><b>सत्यपराक्रमः</b> — सत्य पराक्रम वाले<br><b>निमिषः</b> — पलक झपकाने वाले<br><b>अनिमिषः</b> — बिना पलक झपकाए देखने वाले<br><b>स्रग्वी</b> — वैजयंती माला वाले<br><b>वाचस्पतिः</b> — वाणी के स्वामी<br><b>उदारधीः</b> — उदार बुद्धि वाले</div>
+</div>
+</div>
+<div class="card" id="c24">
+<button class="cbtn" onclick="tog(24)">
+<span class="num" id="b24">24</span>
+<div style="flex:1"><p class="st">अग्रणीर्ग्रामणीः श्रीमान् न्यायो नेता समीरणः । सहस्रमूर्धा विश्वात्मा सहस्राक्षः सहस्रपात् ॥२४॥</p></div>
+<span class="arr" id="a24">&#9660;</span>
+</button>
+<div class="mp" id="p24" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 24</p>
+<div class="mt"><b>अग्रणीः</b> — सबसे आगे<br><b>ग्रामणीः</b> — समूह के नेता<br><b>श्रीमान्</b> — ऐश्वर्यशाली<br><b>न्यायः</b> — न्यायस्वरूप<br><b>नेता</b> — सबका नेतृत्व करने वाले<br><b>समीरणः</b> — वायुस्वरूप<br><b>सहस्रमूर्धा</b> — हजार शिर वाले<br><b>विश्वात्मा</b> — विश्व की आत्मा<br><b>सहस्राक्षः</b> — हजार नेत्र वाले<br><b>सहस्रपात्</b> — हजार पाद वाले</div>
+</div>
+</div>
+<div class="card" id="c25">
+<button class="cbtn" onclick="tog(25)">
+<span class="num" id="b25">25</span>
+<div style="flex:1"><p class="st">आवर्तनो निवृत्तात्मा संवृतः सम्प्रमर्दनः । अहः संवर्तको वह्निरनिलो धरणीधरः ॥२५॥</p></div>
+<span class="arr" id="a25">&#9660;</span>
+</button>
+<div class="mp" id="p25" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 25</p>
+<div class="mt"><b>आवर्तनः</b> — संसार चक्र को घुमाने वाले<br><b>निवृत्तात्मा</b> — विरक्त आत्मा<br><b>संवृतः</b> — माया से आवृत<br><b>सम्प्रमर्दनः</b> — दुष्टों को कुचलने वाले<br><b>अहः</b> — दिन के स्वरूप<br><b>संवर्तकः</b> — प्रलय में सबको समेटने वाले<br><b>वह्निः</b> — अग्निस्वरूप<br><b>अनिलः</b> — वायुस्वरूप<br><b>धरणीधरः</b> — पृथ्वी को धारण करने वाले</div>
+</div>
+</div>
+<div class="card" id="c26">
+<button class="cbtn" onclick="tog(26)">
+<span class="num" id="b26">26</span>
+<div style="flex:1"><p class="st">सुप्रसादः प्रसन्नात्मा विश्वधृग्विश्वभुग्विभुः । सत्कर्ता सत्कृतः साधुर्जह्नुर्नारायणो नरः ॥२६॥</p></div>
+<span class="arr" id="a26">&#9660;</span>
+</button>
+<div class="mp" id="p26" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 26</p>
+<div class="mt"><b>सुप्रसादः</b> — भक्तों पर शीघ्र प्रसन्न होने वाले<br><b>प्रसन्नात्मा</b> — सदा प्रसन्न आत्मा<br><b>विश्वधृक्</b> — विश्व को धारण करने वाले<br><b>विश्वभुक्</b> — विश्व का उपभोग करने वाले<br><b>विभुः</b> — सर्वव्यापी<br><b>सत्कर्ता</b> — सत्कार करने वाले<br><b>सत्कृतः</b> — देवताओं द्वारा सत्कृत<br><b>साधुः</b> — साधुस्वरूप<br><b>जह्नुः</b> — सबका भक्षण करने वाले<br><b>नारायणः</b> — जीवों के आश्रय<br><b>नरः</b> — नर स्वरूप</div>
+</div>
+</div>
+<div class="card" id="c27">
+<button class="cbtn" onclick="tog(27)">
+<span class="num" id="b27">27</span>
+<div style="flex:1"><p class="st">असंख्येयोऽप्रमेयात्मा विशिष्टः शिष्टकृच्छुचिः । सिद्धार्थः सिद्धसंकल्पः सिद्धिदः सिद्धिसाधनः ॥२७॥</p></div>
+<span class="arr" id="a27">&#9660;</span>
+</button>
+<div class="mp" id="p27" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 27</p>
+<div class="mt"><b>असंख्येयः</b> — असंख्य गुणों वाले<br><b>अप्रमेयात्मा</b> — प्रमाणों से परे<br><b>विशिष्टः</b> — सबसे विशिष्ट<br><b>शिष्टकृत्</b> — शिष्टाचार बनाने वाले<br><b>शुचिः</b> — पवित्र<br><b>सिद्धार्थः</b> — जिनके सभी प्रयोजन सिद्ध हैं<br><b>सिद्धसंकल्पः</b> — जिनके सभी संकल्प सिद्ध होते हैं<br><b>सिद्धिदः</b> — सिद्धि प्रदान करने वाले<br><b>सिद्धिसाधनः</b> — सिद्धि के साधन</div>
+</div>
+</div>
+<div class="card" id="c28">
+<button class="cbtn" onclick="tog(28)">
+<span class="num" id="b28">28</span>
+<div style="flex:1"><p class="st">वृषाही वृषभो विष्णुर्वृषपर्वा वृषोदरः । वर्धनो वर्धमानश्च विविक्तः श्रुतिसागरः ॥२८॥</p></div>
+<span class="arr" id="a28">&#9660;</span>
+</button>
+<div class="mp" id="p28" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 28</p>
+<div class="mt"><b>वृषाही</b> — धर्म के वाहन<br><b>वृषभः</b> — धर्म के स्वरूप<br><b>विष्णुः</b> — सर्वव्यापी<br><b>वृषपर्वा</b> — धर्म की सीढ़ी<br><b>वृषोदरः</b> — धर्म को उदर में रखने वाले<br><b>वर्धनः</b> — सबको बढ़ाने वाले<br><b>वर्धमानः</b> — स्वयं बढ़ने वाले<br><b>विविक्तः</b> — एकांत में विराजने वाले<br><b>श्रुतिसागरः</b> — वेदों के सागर</div>
+</div>
+</div>
+<div class="card" id="c29">
+<button class="cbtn" onclick="tog(29)">
+<span class="num" id="b29">29</span>
+<div style="flex:1"><p class="st">सुभुजो दुर्धरो वाग्मी महेन्द्रो वसुदो वसुः । नैकरूपो बृहद्रूपः शिपिविष्टः प्रकाशनः ॥२९॥</p></div>
+<span class="arr" id="a29">&#9660;</span>
+</button>
+<div class="mp" id="p29" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 29</p>
+<div class="mt"><b>सुभुजः</b> — सुंदर भुजाओं वाले<br><b>दुर्धरः</b> — जिन्हें धारण करना कठिन<br><b>वाग्मी</b> — वाक्पटु<br><b>महेन्द्रः</b> — महान इंद्र<br><b>वसुदः</b> — धन देने वाले<br><b>वसुः</b> — स्वयं वसु<br><b>नैकरूपः</b> — अनेक रूपों वाले<br><b>बृहद्रूपः</b> — विशाल रूप वाले<br><b>शिपिविष्टः</b> — किरणों में व्याप्त<br><b>प्रकाशनः</b> — सबको प्रकाशित करने वाले</div>
+</div>
+</div>
+<div class="card" id="c30">
+<button class="cbtn" onclick="tog(30)">
+<span class="num" id="b30">30</span>
+<div style="flex:1"><p class="st">ओजस्तेजोद्युतिधरः प्रकाशात्मा प्रतापनः । ऋद्धः स्पष्टाक्षरो मन्त्रश्चन्द्रांशुर्भास्करद्युतिः ॥३०॥</p></div>
+<span class="arr" id="a30">&#9660;</span>
+</button>
+<div class="mp" id="p30" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 30</p>
+<div class="mt"><b>ओजस्तेजोद्युतिधरः</b> — ओज, तेज और कांति धारण करने वाले<br><b>प्रकाशात्मा</b> — प्रकाशस्वरूप<br><b>प्रतापनः</b> — सबको तपाने वाले<br><b>ऋद्धः</b> — सर्वसमृद्ध<br><b>स्पष्टाक्षरः</b> — ओंकार स्वरूप<br><b>मन्त्रः</b> — मंत्रस्वरूप<br><b>चन्द्रांशुः</b> — चंद्रमा की भाँति शीतल<br><b>भास्करद्युतिः</b> — सूर्य के समान प्रकाशमान</div>
+</div>
+</div>
+<div class="card" id="c31">
+<button class="cbtn" onclick="tog(31)">
+<span class="num" id="b31">31</span>
+<div style="flex:1"><p class="st">अमृतांशूद्भवो भानुः शशबिन्दुः सुरेश्वरः । औषधं जगतः सेतुः सत्यधर्मपराक्रमः ॥३१॥</p></div>
+<span class="arr" id="a31">&#9660;</span>
+</button>
+<div class="mp" id="p31" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 31</p>
+<div class="mt"><b>अमृतांशूद्भवः</b> — जिनसे अमृत किरणें उत्पन्न होती हैं<br><b>भानुः</b> — प्रकाश देने वाले<br><b>शशबिन्दुः</b> — चंद्रमास्वरूप<br><b>सुरेश्वरः</b> — देवताओं के ईश्वर<br><b>औषधम्</b> — जन्म-मृत्यु की औषधि<br><b>जगतः सेतुः</b> — जगत के सेतु<br><b>सत्यधर्मपराक्रमः</b> — सत्य और धर्म पर आधारित पराक्रम</div>
+</div>
+</div>
+<div class="card" id="c32">
+<button class="cbtn" onclick="tog(32)">
+<span class="num" id="b32">32</span>
+<div style="flex:1"><p class="st">भूतभव्यभवन्नाथः पवनः पावनोऽनलः । कामहा कामकृत्कान्तः कामः कामप्रदः प्रभुः ॥३२॥</p></div>
+<span class="arr" id="a32">&#9660;</span>
+</button>
+<div class="mp" id="p32" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 32</p>
+<div class="mt"><b>भूतभव्यभवन्नाथः</b> — तीनों काल के नाथ<br><b>पवनः</b> — पवित्र करने वाले वायु<br><b>पावनः</b> — सबको पवित्र करने वाले<br><b>अनलः</b> — अग्निस्वरूप<br><b>कामहा</b> — कामनाओं का नाश करने वाले<br><b>कामकृत्</b> — भक्तों की इच्छाएँ पूर्ण करने वाले<br><b>कान्तः</b> — सुंदर<br><b>कामः</b> — कामनास्वरूप<br><b>कामप्रदः</b> — इच्छाएँ प्रदान करने वाले<br><b>प्रभुः</b> — सर्वसमर्थ प्रभु</div>
+</div>
+</div>
+<div class="card" id="c33">
+<button class="cbtn" onclick="tog(33)">
+<span class="num" id="b33">33</span>
+<div style="flex:1"><p class="st">युगादिकृद्युगावर्तो नैकमायो महाशनः । अदृश्यो व्यक्तरूपश्च सहस्रजिदनन्तजित् ॥३३॥</p></div>
+<span class="arr" id="a33">&#9660;</span>
+</button>
+<div class="mp" id="p33" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 33</p>
+<div class="mt"><b>युगादिकृत्</b> — युगों के आदि के कर्ता<br><b>युगावर्तः</b> — युगों को घुमाने वाले<br><b>नैकमायः</b> — अनेक माया वाले<br><b>महाशनः</b> — महान आहार वाले<br><b>अदृश्यः</b> — दृष्टि से परे<br><b>व्यक्तरूपः</b> — अवतार में व्यक्त<br><b>सहस्रजित्</b> — हजारों को जीतने वाले<br><b>अनन्तजित्</b> — अनंत को जीतने वाले</div>
+</div>
+</div>
+<div class="card" id="c34">
+<button class="cbtn" onclick="tog(34)">
+<span class="num" id="b34">34</span>
+<div style="flex:1"><p class="st">इष्टोऽविशिष्टः शिष्टेष्टः शिखण्डी नहुषो वृषः । क्रोधहा क्रोधकृत्कर्ता विश्वबाहुर्महीधरः ॥३४॥</p></div>
+<span class="arr" id="a34">&#9660;</span>
+</button>
+<div class="mp" id="p34" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 34</p>
+<div class="mt"><b>इष्टः</b> — सबको प्रिय<br><b>अविशिष्टः</b> — सबमें समान<br><b>शिष्टेष्टः</b> — शिष्टजनों के प्रिय<br><b>शिखण्डी</b> — मोरपंख धारण करने वाले<br><b>नहुषः</b> — जीवों को बांधने वाले<br><b>वृषः</b> — धर्मस्वरूप<br><b>क्रोधहा</b> — क्रोध का नाश करने वाले<br><b>क्रोधकृत्</b> — दुष्टों में क्रोध उत्पन्न करने वाले<br><b>कर्ता</b> — सबके कर्ता<br><b>विश्वबाहुः</b> — विश्वव्यापी भुजाओं वाले<br><b>महीधरः</b> — पृथ्वी को धारण करने वाले</div>
+</div>
+</div>
+<div class="card" id="c35">
+<button class="cbtn" onclick="tog(35)">
+<span class="num" id="b35">35</span>
+<div style="flex:1"><p class="st">अच्युतः प्रथितः प्राणः प्राणदो वासवानुजः । अपांनिधिरधिष्ठानमप्रमत्तः प्रतिष्ठितः ॥३५॥</p></div>
+<span class="arr" id="a35">&#9660;</span>
+</button>
+<div class="mp" id="p35" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 35</p>
+<div class="mt"><b>अच्युतः</b> — अपने पद से च्युत न होने वाले<br><b>प्रथितः</b> — विख्यात<br><b>प्राणः</b> — प्राणस्वरूप<br><b>प्राणदः</b> — प्राण देने वाले<br><b>वासवानुजः</b> — इंद्र के अनुज वामन<br><b>अपांनिधिः</b> — समुद्र स्वरूप<br><b>अधिष्ठानम्</b> — सबके आधार<br><b>अप्रमत्तः</b> — कभी प्रमाद न करने वाले<br><b>प्रतिष्ठितः</b> — अपने में प्रतिष्ठित</div>
+</div>
+</div>
+<div class="card" id="c36">
+<button class="cbtn" onclick="tog(36)">
+<span class="num" id="b36">36</span>
+<div style="flex:1"><p class="st">स्कन्दः स्कन्दधरो धुर्यो वरदो वायुवाहनः । वासुदेवो बृहद्भानुरादिदेवः पुरन्दरः ॥३६॥</p></div>
+<span class="arr" id="a36">&#9660;</span>
+</button>
+<div class="mp" id="p36" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 36</p>
+<div class="mt"><b>स्कन्दः</b> — स्कंद के पिता<br><b>स्कन्दधरः</b> — स्कंद को धारण करने वाले<br><b>धुर्यः</b> — भार वहन करने में समर्थ<br><b>वरदः</b> — वर देने वाले<br><b>वायुवाहनः</b> — वायु वाहन वाले<br><b>वासुदेवः</b> — वसुदेव के पुत्र<br><b>बृहद्भानुः</b> — विशाल प्रकाश वाले<br><b>आदिदेवः</b> — आदिदेव<br><b>पुरन्दरः</b> — पुरों का विनाश करने वाले</div>
+</div>
+</div>
+<div class="card" id="c37">
+<button class="cbtn" onclick="tog(37)">
+<span class="num" id="b37">37</span>
+<div style="flex:1"><p class="st">अशोकस्तारणस्तारः शूरः शौरिर्जनेश्वरः । अनुकूलः शतावर्तः पद्मी पद्मनिभेक्षणः ॥३७॥</p></div>
+<span class="arr" id="a37">&#9660;</span>
+</button>
+<div class="mp" id="p37" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 37</p>
+<div class="mt"><b>अशोकः</b> — शोकरहित<br><b>तारणः</b> — भवसागर से पार लगाने वाले<br><b>तारः</b> — तारने वाले<br><b>शूरः</b> — महान शूर<br><b>शौरिः</b> — शूरवंश में उत्पन्न<br><b>जनेश्वरः</b> — जनों के ईश्वर<br><b>अनुकूलः</b> — सबके अनुकूल<br><b>शतावर्तः</b> — सैकड़ों बार प्रकट होने वाले<br><b>पद्मी</b> — कमल धारण करने वाले<br><b>पद्मनिभेक्षणः</b> — कमल के समान नेत्र वाले</div>
+</div>
+</div>
+<div class="card" id="c38">
+<button class="cbtn" onclick="tog(38)">
+<span class="num" id="b38">38</span>
+<div style="flex:1"><p class="st">पद्मनाभोऽरविन्दाक्षः पद्मगर्भः शरीरभृत् । महर्द्धिर्ऋद्धो वृद्धात्मा महाक्षो गरुडध्वजः ॥३८॥</p></div>
+<span class="arr" id="a38">&#9660;</span>
+</button>
+<div class="mp" id="p38" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 38</p>
+<div class="mt"><b>पद्मनाभः</b> — नाभि से कमल प्रकट<br><b>अरविन्दाक्षः</b> — कमल के समान नेत्र<br><b>पद्मगर्भः</b> — कमल के गर्भ में विद्यमान<br><b>शरीरभृत्</b> — शरीर धारण करने वाले<br><b>महर्द्धिः</b> — महान ऋद्धि वाले<br><b>ऋद्धः</b> — समृद्ध<br><b>वृद्धात्मा</b> — महान आत्मा<br><b>महाक्षः</b> — विशाल आँखों वाले<br><b>गरुडध्वजः</b> — गरुड़ ध्वजा वाले</div>
+</div>
+</div>
+<div class="card" id="c39">
+<button class="cbtn" onclick="tog(39)">
+<span class="num" id="b39">39</span>
+<div style="flex:1"><p class="st">अतुलः शरभो भीमः समयज्ञो हविर्हरिः । सर्वलक्षणलक्षण्यो लक्ष्मीवान् समितिञ्जयः ॥३९॥</p></div>
+<span class="arr" id="a39">&#9660;</span>
+</button>
+<div class="mp" id="p39" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 39</p>
+<div class="mt"><b>अतुलः</b> — जिनकी तुलना नहीं<br><b>शरभः</b> — शरभ स्वरूप<br><b>भीमः</b> — अत्यंत भयंकर<br><b>समयज्ञः</b> — समय को जानने वाले<br><b>हविः</b> — हवि स्वरूप<br><b>हरिः</b> — पाप हरने वाले<br><b>सर्वलक्षणलक्षण्यः</b> — सभी शुभ लक्षणों से युक्त<br><b>लक्ष्मीवान्</b> — लक्ष्मी के पति<br><b>समितिञ्जयः</b> — युद्ध में विजयी</div>
+</div>
+</div>
+<div class="card" id="c40">
+<button class="cbtn" onclick="tog(40)">
+<span class="num" id="b40">40</span>
+<div style="flex:1"><p class="st">विक्षरो रोहितो मार्गो हेतुर्दामोदरः सहः । महीधरो महाभागो वेगवानमिताशनः ॥४०॥</p></div>
+<span class="arr" id="a40">&#9660;</span>
+</button>
+<div class="mp" id="p40" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 40</p>
+<div class="mt"><b>विक्षरः</b> — कभी क्षय न होने वाले<br><b>रोहितः</b> — रोहित मछली रूप<br><b>मार्गः</b> — मार्गस्वरूप<br><b>हेतुः</b> — सब कारणों के कारण<br><b>दामोदरः</b> — माँ यशोदा द्वारा रस्सी से बंधे<br><b>सहः</b> — सबको सहन करने वाले<br><b>महीधरः</b> — पृथ्वी को धारण करने वाले<br><b>महाभागः</b> — महाभाग्यशाली<br><b>वेगवान्</b> — तीव्र गति वाले<br><b>अमिताशनः</b> — असीमित आहार वाले</div>
+</div>
+</div>
+<div class="card" id="c41">
+<button class="cbtn" onclick="tog(41)">
+<span class="num" id="b41">41</span>
+<div style="flex:1"><p class="st">उद्भवः क्षोभणो देवः श्रीगर्भः परमेश्वरः । करणं कारणं कर्ता विकर्ता गहनो गुहः ॥४१॥</p></div>
+<span class="arr" id="a41">&#9660;</span>
+</button>
+<div class="mp" id="p41" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 41</p>
+<div class="mt"><b>उद्भवः</b> — स्वयं उत्पन्न<br><b>क्षोभणः</b> — प्रलय में क्षोभ उत्पन्न करने वाले<br><b>देवः</b> — देवस्वरूप<br><b>श्रीगर्भः</b> — जिनके गर्भ में श्री हैं<br><b>परमेश्वरः</b> — परम ईश्वर<br><b>करणम्</b> — सबके साधन<br><b>कारणम्</b> — सबके कारण<br><b>कर्ता</b> — सबके कर्ता<br><b>विकर्ता</b> — विविध सृष्टि के कर्ता<br><b>गहनः</b> — गहन<br><b>गुहः</b> — हृदय में छिपे</div>
+</div>
+</div>
+<div class="card" id="c42">
+<button class="cbtn" onclick="tog(42)">
+<span class="num" id="b42">42</span>
+<div style="flex:1"><p class="st">व्यवसायो व्यवस्थानः संस्थानः स्थानदो ध्रुवः । परर्द्धिः परमस्पष्टस्तुष्टः पुष्टः शुभेक्षणः ॥४२॥</p></div>
+<span class="arr" id="a42">&#9660;</span>
+</button>
+<div class="mp" id="p42" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 42</p>
+<div class="mt"><b>व्यवसायः</b> — दृढ़ निश्चय स्वरूप<br><b>व्यवस्थानः</b> — सुव्यवस्थित करने वाले<br><b>संस्थानः</b> — समस्त संस्थाओं के आधार<br><b>स्थानदः</b> — स्थान प्रदान करने वाले<br><b>ध्रुवः</b> — ध्रुव की भाँति स्थिर<br><b>परर्द्धिः</b> — परम ऐश्वर्य वाले<br><b>परमस्पष्टः</b> — स्पष्ट रूप से प्रकट<br><b>तुष्टः</b> — संतुष्ट<br><b>पुष्टः</b> — पुष्ट<br><b>शुभेक्षणः</b> — शुभ दृष्टि वाले</div>
+</div>
+</div>
+<div class="card" id="c43">
+<button class="cbtn" onclick="tog(43)">
+<span class="num" id="b43">43</span>
+<div style="flex:1"><p class="st">रामो विरामो विरजो मार्गो नेयो नयोऽनयः । वीरः शक्तिमतां श्रेष्ठो धर्मो धर्मविदुत्तमः ॥४३॥</p></div>
+<span class="arr" id="a43">&#9660;</span>
+</button>
+<div class="mp" id="p43" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 43</p>
+<div class="mt"><b>रामः</b> — आनंद देने वाले, राम अवतार<br><b>विरामः</b> — सबका विश्राम स्थान<br><b>विरजः</b> — रजोगुण से मुक्त<br><b>मार्गः</b> — मोक्ष का मार्ग<br><b>नेयः</b> — नेता<br><b>नयः</b> — नीतिस्वरूप<br><b>अनयः</b> — अनीति से परे<br><b>वीरः</b> — वीरों में वीर<br><b>शक्तिमतां श्रेष्ठः</b> — शक्तिशालियों में श्रेष्ठ<br><b>धर्मः</b> — धर्मस्वरूप<br><b>धर्मविदुत्तमः</b> — धर्म जानने वालों में उत्तम</div>
+</div>
+</div>
+<div class="card" id="c44">
+<button class="cbtn" onclick="tog(44)">
+<span class="num" id="b44">44</span>
+<div style="flex:1"><p class="st">वैकुण्ठः पुरुषः प्राणः प्राणदः प्रणवः पृथुः । हिरण्यगर्भः शत्रुघ्नो व्याप्तो वायुरधोक्षजः ॥४४॥</p></div>
+<span class="arr" id="a44">&#9660;</span>
+</button>
+<div class="mp" id="p44" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 44</p>
+<div class="mt"><b>वैकुण्ठः</b> — वैकुण्ठ धाम के स्वामी<br><b>पुरुषः</b> — परम पुरुष<br><b>प्राणः</b> — प्राण के स्वरूप<br><b>प्राणदः</b> — प्राण देने वाले<br><b>प्रणवः</b> — ओंकार स्वरूप<br><b>पृथुः</b> — विस्तृत<br><b>हिरण्यगर्भः</b> — सोने के अंडे में प्रकट<br><b>शत्रुघ्नः</b> — शत्रुओं का नाश करने वाले<br><b>व्याप्तः</b> — सर्वत्र व्याप्त<br><b>वायुः</b> — वायुस्वरूप<br><b>अधोक्षजः</b> — इंद्रियों की पहुँच से परे</div>
+</div>
+</div>
+<div class="card" id="c45">
+<button class="cbtn" onclick="tog(45)">
+<span class="num" id="b45">45</span>
+<div style="flex:1"><p class="st">ऋतुः सुदर्शनः कालः परमेष्ठी परिग्रहः । उग्रः संवत्सरो दक्षो विश्रामो विश्वदक्षिणः ॥४५॥</p></div>
+<span class="arr" id="a45">&#9660;</span>
+</button>
+<div class="mp" id="p45" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 45</p>
+<div class="mt"><b>ऋतुः</b> — ऋतुओं के स्वरूप<br><b>सुदर्शनः</b> — सुंदर दर्शन वाले<br><b>कालः</b> — काल के स्वरूप<br><b>परमेष्ठी</b> — परम पद में स्थित<br><b>परिग्रहः</b> — सबको ग्रहण करने वाले<br><b>उग्रः</b> — उग्र स्वरूप<br><b>संवत्सरः</b> — वर्ष के स्वरूप<br><b>दक्षः</b> — कुशल<br><b>विश्रामः</b> — सबके विश्राम स्थान<br><b>विश्वदक्षिणः</b> — विश्व में कुशल</div>
+</div>
+</div>
+<div class="card" id="c46">
+<button class="cbtn" onclick="tog(46)">
+<span class="num" id="b46">46</span>
+<div style="flex:1"><p class="st">विस्तारः स्थावरस्थाणुः प्रमाणं बीजमव्ययम् । अर्थोऽनर्थो महाकोशो महाभोगो महाधनः ॥४६॥</p></div>
+<span class="arr" id="a46">&#9660;</span>
+</button>
+<div class="mp" id="p46" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 46</p>
+<div class="mt"><b>विस्तारः</b> — विस्तृत<br><b>स्थावरस्थाणुः</b> — स्थावर और स्थिर<br><b>प्रमाणम्</b> — प्रमाण स्वरूप<br><b>बीजमव्ययम्</b> — अव्यय बीज<br><b>अर्थः</b> — प्रयोजन स्वरूप<br><b>अनर्थः</b> — अनर्थ के नाशक<br><b>महाकोशः</b> — महान खजाना<br><b>महाभोगः</b> — महान भोग वाले<br><b>महाधनः</b> — महाधन संपन्न</div>
+</div>
+</div>
+<div class="card" id="c47">
+<button class="cbtn" onclick="tog(47)">
+<span class="num" id="b47">47</span>
+<div style="flex:1"><p class="st">अनिर्विण्णः स्थविष्ठोऽभूर्धर्मयूपो महामखः । नक्षत्रनेमिर्नक्षत्री क्षमः क्षामः समीहनः ॥४७॥</p></div>
+<span class="arr" id="a47">&#9660;</span>
+</button>
+<div class="mp" id="p47" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 47</p>
+<div class="mt"><b>अनिर्विण्णः</b> — कभी खिन्न न होने वाले<br><b>स्थविष्ठः</b> — सबसे बड़े<br><b>अभूः</b> — जन्म-रहित<br><b>धर्मयूपः</b> — धर्म के स्तंभ<br><b>महामखः</b> — महायज्ञ स्वरूप<br><b>नक्षत्रनेमिः</b> — नक्षत्रों के चक्र के केंद्र<br><b>नक्षत्री</b> — नक्षत्रों के स्वामी<br><b>क्षमः</b> — क्षमास्वरूप<br><b>क्षामः</b> — क्षीण होने वाले<br><b>समीहनः</b> — सबकी इच्छाएँ पूरी करने वाले</div>
+</div>
+</div>
+<div class="card" id="c48">
+<button class="cbtn" onclick="tog(48)">
+<span class="num" id="b48">48</span>
+<div style="flex:1"><p class="st">यज्ञ इज्यो महेज्यश्च क्रतुः सत्रं सतां गतिः । सर्वदर्शी विमुक्तात्मा सर्वज्ञो ज्ञानमुत्तमम् ॥४८॥</p></div>
+<span class="arr" id="a48">&#9660;</span>
+</button>
+<div class="mp" id="p48" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 48</p>
+<div class="mt"><b>यज्ञः</b> — यज्ञस्वरूप<br><b>इज्यः</b> — पूजनीय<br><b>महेज्यः</b> — महान पूजनीय<br><b>क्रतुः</b> — यज्ञस्वरूप<br><b>सत्रम्</b> — सज्जनों की रक्षा करने वाले<br><b>सतां गतिः</b> — सज्जनों की गति<br><b>सर्वदर्शी</b> — सबको देखने वाले<br><b>विमुक्तात्मा</b> — मुक्त आत्मा<br><b>सर्वज्ञः</b> — सर्वज्ञ<br><b>ज्ञानमुत्तमम्</b> — उत्तम ज्ञान</div>
+</div>
+</div>
+<div class="card" id="c49">
+<button class="cbtn" onclick="tog(49)">
+<span class="num" id="b49">49</span>
+<div style="flex:1"><p class="st">सुव्रतः सुमुखः सूक्ष्मः सुघोषः सुखदः सुहृत् । मनोहरो जितक्रोधो वीरबाहुर्विदारणः ॥४९॥</p></div>
+<span class="arr" id="a49">&#9660;</span>
+</button>
+<div class="mp" id="p49" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 49</p>
+<div class="mt"><b>सुव्रतः</b> — उत्तम व्रत वाले<br><b>सुमुखः</b> — सुंदर मुख वाले<br><b>सूक्ष्मः</b> — अत्यंत सूक्ष्म<br><b>सुघोषः</b> — मधुर ध्वनि वाले<br><b>सुखदः</b> — सुख देने वाले<br><b>सुहृत्</b> — सच्चे हितैषी<br><b>मनोहरः</b> — मन को हरने वाले<br><b>जितक्रोधः</b> — क्रोध को जीतने वाले<br><b>वीरबाहुः</b> — वीर भुजाओं वाले<br><b>विदारणः</b> — दुष्टों का विदारण करने वाले</div>
+</div>
+</div>
+<div class="card" id="c50">
+<button class="cbtn" onclick="tog(50)">
+<span class="num" id="b50">50</span>
+<div style="flex:1"><p class="st">स्वापनः स्ववशो व्यापी नैकात्मा नैककर्मकृत् । वत्सरो वत्सलो वत्सी रत्नगर्भो धनेश्वरः ॥५०॥</p></div>
+<span class="arr" id="a50">&#9660;</span>
+</button>
+<div class="mp" id="p50" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 50</p>
+<div class="mt"><b>स्वापनः</b> — जीवों को निद्रा में डालने वाले<br><b>स्ववशः</b> — अपने वश में<br><b>व्यापी</b> — सर्वव्यापी<br><b>नैकात्मा</b> — अनेक आत्माओं में विराजमान<br><b>नैककर्मकृत्</b> — अनेक कर्म करने वाले<br><b>वत्सरः</b> — वर्षभर रहने वाले<br><b>वत्सलः</b> — भक्तों से स्नेही<br><b>वत्सी</b> — गोपालक<br><b>रत्नगर्भः</b> — जिनके गर्भ में रत्न हैं<br><b>धनेश्वरः</b> — धन के ईश्वर</div>
+</div>
+</div>
+<div class="card" id="c51">
+<button class="cbtn" onclick="tog(51)">
+<span class="num" id="b51">51</span>
+<div style="flex:1"><p class="st">धर्मगुब्धर्मकृद्धर्मी सदसत्क्षरमक्षरम् । अविज्ञाता सहस्रांशुर्विधाता कृतलक्षणः ॥५१॥</p></div>
+<span class="arr" id="a51">&#9660;</span>
+</button>
+<div class="mp" id="p51" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 51</p>
+<div class="mt"><b>धर्मगुप्</b> — धर्म की रक्षा करने वाले<br><b>धर्मकृत्</b> — धर्म के निर्माता<br><b>धर्मी</b> — धर्मात्मा<br><b>सत्</b> — सत् स्वरूप<br><b>असत्</b> — माया के स्वरूप<br><b>क्षरम्</b> — क्षर (नाशवान)<br><b>अक्षरम्</b> — अक्षर (अविनाशी)<br><b>अविज्ञाता</b> — साधारण ज्ञान से परे<br><b>सहस्रांशुः</b> — हजार किरणों वाले सूर्य<br><b>विधाता</b> — विधान करने वाले<br><b>कृतलक्षणः</b> — शुभ लक्षणों से युक्त</div>
+</div>
+</div>
+<div class="card" id="c52">
+<button class="cbtn" onclick="tog(52)">
+<span class="num" id="b52">52</span>
+<div style="flex:1"><p class="st">गभस्तिनेमिः सत्त्वस्थः सिंहो भूतमहेश्वरः । आदिदेवो महादेवो देवेशो देवभृद्गुरुः ॥५२॥</p></div>
+<span class="arr" id="a52">&#9660;</span>
+</button>
+<div class="mp" id="p52" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 52</p>
+<div class="mt"><b>गभस्तिनेमिः</b> — सूर्य की किरणों के केंद्र<br><b>सत्त्वस्थः</b> — सत्त्वगुण में स्थित<br><b>सिंहः</b> — सिंह के समान पराक्रमी<br><b>भूतमहेश्वरः</b> — समस्त प्राणियों के महेश्वर<br><b>आदिदेवः</b> — आदिदेव<br><b>महादेवः</b> — महादेव<br><b>देवेशः</b> — देवताओं के ईश<br><b>देवभृत्</b> — देवताओं को धारण करने वाले<br><b>गुरुः</b> — परम गुरु</div>
+</div>
+</div>
+<div class="card" id="c53">
+<button class="cbtn" onclick="tog(53)">
+<span class="num" id="b53">53</span>
+<div style="flex:1"><p class="st">उत्तरो गोपतिर्गोप्ता ज्ञानगम्यः पुरातनः । शरीरभूतभृद्भोक्ता कपीन्द्रो भूरिदक्षिणः ॥५३॥</p></div>
+<span class="arr" id="a53">&#9660;</span>
+</button>
+<div class="mp" id="p53" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 53</p>
+<div class="mt"><b>उत्तरः</b> — उत्तम<br><b>गोपतिः</b> — गायों के स्वामी<br><b>गोप्ता</b> — रक्षक<br><b>ज्ञानगम्यः</b> — ज्ञान से प्राप्त होने वाले<br><b>पुरातनः</b> — सबसे पुराने<br><b>शरीरभूतभृत्</b> — शरीर के भूत तत्वों को धारण करने वाले<br><b>भोक्ता</b> — सबके भोक्ता<br><b>कपीन्द्रः</b> — वानरराज<br><b>भूरिदक्षिणः</b> — महान दक्षिणा देने वाले</div>
+</div>
+</div>
+<div class="card" id="c54">
+<button class="cbtn" onclick="tog(54)">
+<span class="num" id="b54">54</span>
+<div style="flex:1"><p class="st">सोमपोऽमृतपः सोमः पुरुजित् पुरुसत्तमः । विनयो जयः सत्यसन्धो दाशार्हः सात्वतां पतिः ॥५४॥</p></div>
+<span class="arr" id="a54">&#9660;</span>
+</button>
+<div class="mp" id="p54" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 54</p>
+<div class="mt"><b>सोमपः</b> — सोमरस पान करने वाले<br><b>अमृतपः</b> — अमृत पान करने वाले<br><b>सोमः</b> — चंद्रमास्वरूप<br><b>पुरुजित्</b> — बहुतों को जीतने वाले<br><b>पुरुसत्तमः</b> — पुरुषों में सत्तम<br><b>विनयः</b> — विनयशील<br><b>जयः</b> — जयस्वरूप<br><b>सत्यसन्धः</b> — सत्य वचन वाले<br><b>दाशार्हः</b> — दाशार्ह वंश में उत्पन्न<br><b>सात्वतां पतिः</b> — यादवों के पति</div>
+</div>
+</div>
+<div class="card" id="c55">
+<button class="cbtn" onclick="tog(55)">
+<span class="num" id="b55">55</span>
+<div style="flex:1"><p class="st">जीवो विनयिता साक्षी मुकुन्दोऽमितविक्रमः । अम्भोनिधिरनन्तात्मा महोदधिशयोऽन्तकः ॥५५॥</p></div>
+<span class="arr" id="a55">&#9660;</span>
+</button>
+<div class="mp" id="p55" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 55</p>
+<div class="mt"><b>जीवः</b> — जीवस्वरूप<br><b>विनयिता</b> — विनय के स्वामी<br><b>साक्षी</b> — सबके साक्षी<br><b>मुकुन्दः</b> — मोक्ष देने वाले<br><b>अमितविक्रमः</b> — असीमित पराक्रम वाले<br><b>अम्भोनिधिः</b> — समुद्र स्वरूप<br><b>अनन्तात्मा</b> — अनंत आत्मा<br><b>महोदधिशयः</b> — महासागर पर शयन करने वाले<br><b>अन्तकः</b> — सबका अंत करने वाले</div>
+</div>
+</div>
+<div class="card" id="c56">
+<button class="cbtn" onclick="tog(56)">
+<span class="num" id="b56">56</span>
+<div style="flex:1"><p class="st">अजो महार्हः स्वाभाव्यो जितामित्रः प्रमोदनः । आनन्दो नन्दनोऽनन्दः सत्यधर्मा त्रिविक्रमः ॥५६॥</p></div>
+<span class="arr" id="a56">&#9660;</span>
+</button>
+<div class="mp" id="p56" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 56</p>
+<div class="mt"><b>अजः</b> — जन्म-रहित<br><b>महार्हः</b> — महान पूजा के योग्य<br><b>स्वाभाव्यः</b> — स्वभाव से पूर्ण<br><b>जितामित्रः</b> — सभी शत्रुओं को जीतने वाले<br><b>प्रमोदनः</b> — सबको आनंदित करने वाले<br><b>आनन्दः</b> — आनंदस्वरूप<br><b>नन्दनः</b> — आनंद देने वाले<br><b>अनन्दः</b> — शोकरहित<br><b>सत्यधर्मा</b> — सत्यधर्म वाले<br><b>त्रिविक्रमः</b> — तीन पगों से सब नापने वाले वामन</div>
+</div>
+</div>
+<div class="card" id="c57">
+<button class="cbtn" onclick="tog(57)">
+<span class="num" id="b57">57</span>
+<div style="flex:1"><p class="st">महर्षिः कपिलाचार्यः कृतज्ञो मेदिनीपतिः । त्रिपदस्त्रिदशाध्यक्षो महाशृङ्गः कृतान्तकृत् ॥५७॥</p></div>
+<span class="arr" id="a57">&#9660;</span>
+</button>
+<div class="mp" id="p57" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 57</p>
+<div class="mt"><b>महर्षिः</b> — महर्षि कपिल के रूप में<br><b>कपिलाचार्यः</b> — कपिल मुनि रूपी आचार्य<br><b>कृतज्ञः</b> — उपकार जानने वाले<br><b>मेदिनीपतिः</b> — पृथ्वी के स्वामी<br><b>त्रिपदः</b> — तीन चरण वाले<br><b>त्रिदशाध्यक्षः</b> — तीनों लोकों के देवताओं के अध्यक्ष<br><b>महाशृङ्गः</b> — मत्स्यावतार में महान शृंग वाले<br><b>कृतान्तकृत्</b> — कर्मों का अंत करने वाले</div>
+</div>
+</div>
+<div class="card" id="c58">
+<button class="cbtn" onclick="tog(58)">
+<span class="num" id="b58">58</span>
+<div style="flex:1"><p class="st">महावराहो गोविन्दः सुषेणः कनकाङ्गदी । गुह्यो गभीरो गहनो गुप्तश्चक्रगदाधरः ॥५८॥</p></div>
+<span class="arr" id="a58">&#9660;</span>
+</button>
+<div class="mp" id="p58" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 58</p>
+<div class="mt"><b>महावराहः</b> — महाशूकर वराह अवतार<br><b>गोविन्दः</b> — गायों के रक्षक<br><b>सुषेणः</b> — सुंदर सेना वाले<br><b>कनकाङ्गदी</b> — सुवर्ण बाजूबंद वाले<br><b>गुह्यः</b> — गुप्त<br><b>गभीरः</b> — गहन<br><b>गहनः</b> — अगम्य<br><b>गुप्तः</b> — छिपे हुए<br><b>चक्रगदाधरः</b> — चक्र और गदा धारण करने वाले</div>
+</div>
+</div>
+<div class="card" id="c59">
+<button class="cbtn" onclick="tog(59)">
+<span class="num" id="b59">59</span>
+<div style="flex:1"><p class="st">वेधाः स्वाङ्गोऽजितः कृष्णो दृढः संकर्षणोऽच्युतः । वरुणो वारुणो वृक्षः पुष्कराक्षो महामनाः ॥५९॥</p></div>
+<span class="arr" id="a59">&#9660;</span>
+</button>
+<div class="mp" id="p59" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 59</p>
+<div class="mt"><b>वेधाः</b> — सब कुछ बनाने वाले<br><b>स्वाङ्गः</b> — दिव्य अंग वाले<br><b>अजितः</b> — अजेय<br><b>कृष्णः</b> — कृष्ण अवतार<br><b>दृढः</b> — दृढ़<br><b>संकर्षणः</b> — बलराम रूप<br><b>अच्युतः</b> — अपने स्थान से च्युत न होने वाले<br><b>वरुणः</b> — जल के देवता<br><b>वारुणः</b> — वरुण के पुत्र<br><b>वृक्षः</b> — छाया देने वाले<br><b>पुष्कराक्षः</b> — कमल के समान नेत्र<br><b>महामनाः</b> — महान मन वाले</div>
+</div>
+</div>
+<div class="card" id="c60">
+<button class="cbtn" onclick="tog(60)">
+<span class="num" id="b60">60</span>
+<div style="flex:1"><p class="st">भगवान् भगहाऽऽनन्दी वनमाली हलायुधः । आदित्यो ज्योतिरादित्यः सहिष्णुर्गतिसत्तमः ॥६०॥</p></div>
+<span class="arr" id="a60">&#9660;</span>
+</button>
+<div class="mp" id="p60" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 60</p>
+<div class="mt"><b>भगवान्</b> — षड् ऐश्वर्य से युक्त<br><b>भगहा</b> — प्रलय में ऐश्वर्य हरण करने वाले<br><b>आनन्दी</b> — सदा आनंदमय<br><b>वनमाली</b> — वनमाला धारण करने वाले<br><b>हलायुधः</b> — हल धारण करने वाले बलराम<br><b>आदित्यः</b> — सूर्यस्वरूप<br><b>ज्योतिरादित्यः</b> — ज्योतिर्मय सूर्य<br><b>सहिष्णुः</b> — सबका सहन करने वाले<br><b>गतिसत्तमः</b> — गतियों में सर्वश्रेष्ठ</div>
+</div>
+</div>
+<div class="card" id="c61">
+<button class="cbtn" onclick="tog(61)">
+<span class="num" id="b61">61</span>
+<div style="flex:1"><p class="st">सुधन्वा खण्डपरशुर्दारुणो द्रविणप्रदः । दिवःस्पृक् सर्वदृग्व्यासो वाचस्पतिरयोनिजः ॥६१॥</p></div>
+<span class="arr" id="a61">&#9660;</span>
+</button>
+<div class="mp" id="p61" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 61</p>
+<div class="mt"><b>सुधन्वा</b> — उत्तम धनुष वाले<br><b>खण्डपरशुः</b> — परशुराम अवतार में खंडित परशु वाले<br><b>दारुणः</b> — दुष्टों के लिए भयंकर<br><b>द्रविणप्रदः</b> — धन प्रदान करने वाले<br><b>दिवःस्पृक्</b> — आकाश को स्पर्श करने वाले<br><b>सर्वदृक्</b> — सबको देखने वाले<br><b>व्यासः</b> — वेद के व्यासस्वरूप<br><b>वाचस्पतिः</b> — वाणी के स्वामी<br><b>अयोनिजः</b> — योनि से जन्म न लेने वाले</div>
+</div>
+</div>
+<div class="card" id="c62">
+<button class="cbtn" onclick="tog(62)">
+<span class="num" id="b62">62</span>
+<div style="flex:1"><p class="st">त्रिसामा सामगः साम निर्वाणं भेषजं भिषक् । संन्यासकृच्छमः शान्तो निष्ठा शान्तिः परायणम् ॥६२॥</p></div>
+<span class="arr" id="a62">&#9660;</span>
+</button>
+<div class="mp" id="p62" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 62</p>
+<div class="mt"><b>त्रिसामा</b> — तीन सामों के स्वरूप<br><b>सामगः</b> — सामगान करने वाले<br><b>साम</b> — सामस्वरूप<br><b>निर्वाणम्</b> — मोक्षस्वरूप<br><b>भेषजम्</b> — संसार रोग की औषधि<br><b>भिषक्</b> — वैद्य<br><b>संन्यासकृत्</b> — संन्यास देने वाले<br><b>शमः</b> — शांत<br><b>शान्तः</b> — शांतस्वरूप<br><b>निष्ठा</b> — परम निष्ठा<br><b>शान्तिः</b> — शांतिस्वरूप<br><b>परायणम्</b> — परम लक्ष्य</div>
+</div>
+</div>
+<div class="card" id="c63">
+<button class="cbtn" onclick="tog(63)">
+<span class="num" id="b63">63</span>
+<div style="flex:1"><p class="st">शुभाङ्गः शान्तिदः स्रष्टा कुमुदः कुवलेशयः । गोहितो गोपतिर्गोप्ता वृषभाक्षो वृषप्रियः ॥६३॥</p></div>
+<span class="arr" id="a63">&#9660;</span>
+</button>
+<div class="mp" id="p63" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 63</p>
+<div class="mt"><b>शुभाङ्गः</b> — शुभ अंग वाले<br><b>शान्तिदः</b> — शांति देने वाले<br><b>स्रष्टा</b> — सृष्टि के निर्माता<br><b>कुमुदः</b> — पृथ्वी को आनंदित करने वाले<br><b>कुवलेशयः</b> — जल में निवास करने वाले<br><b>गोहितः</b> — गायों के हितकारी<br><b>गोपतिः</b> — गायों के स्वामी<br><b>गोप्ता</b> — सबके रक्षक<br><b>वृषभाक्षः</b> — वृषभ के समान नेत्र<br><b>वृषप्रियः</b> — धर्म प्रिय</div>
+</div>
+</div>
+<div class="card" id="c64">
+<button class="cbtn" onclick="tog(64)">
+<span class="num" id="b64">64</span>
+<div style="flex:1"><p class="st">अनिवर्ती निवृत्तात्मा संक्षेप्ता क्षेमकृच्छिवः । श्रीवत्सवक्षाः श्रीवासः श्रीपतिः श्रीमतांवरः ॥६४॥</p></div>
+<span class="arr" id="a64">&#9660;</span>
+</button>
+<div class="mp" id="p64" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 64</p>
+<div class="mt"><b>अनिवर्ती</b> — कभी पीछे न हटने वाले<br><b>निवृत्तात्मा</b> — विरक्त आत्मा<br><b>संक्षेप्ता</b> — प्रलय में सबको समेटने वाले<br><b>क्षेमकृत्</b> — कल्याण करने वाले<br><b>शिवः</b> — मंगलस्वरूप<br><b>श्रीवत्सवक्षाः</b> — वक्षस्थल पर श्रीवत्स चिह्न वाले<br><b>श्रीवासः</b> — जिनमें लक्ष्मी निवास करती हैं<br><b>श्रीपतिः</b> — लक्ष्मी के पति<br><b>श्रीमतांवरः</b> — ऐश्वर्यशालियों में श्रेष्ठ</div>
+</div>
+</div>
+<div class="card" id="c65">
+<button class="cbtn" onclick="tog(65)">
+<span class="num" id="b65">65</span>
+<div style="flex:1"><p class="st">श्रीदः श्रीशः श्रीनिवासः श्रीनिधिः श्रीविभावनः । श्रीधरः श्रीकरः श्रेयः श्रीमाँल्लोकत्रयाश्रयः ॥६५॥</p></div>
+<span class="arr" id="a65">&#9660;</span>
+</button>
+<div class="mp" id="p65" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 65</p>
+<div class="mt"><b>श्रीदः</b> — लक्ष्मी देने वाले<br><b>श्रीशः</b> — लक्ष्मी के ईश<br><b>श्रीनिवासः</b> — जिनमें लक्ष्मी निवास करती हैं<br><b>श्रीनिधिः</b> — लक्ष्मी के निधान<br><b>श्रीविभावनः</b> — लक्ष्मी को प्रकट करने वाले<br><b>श्रीधरः</b> — लक्ष्मी को धारण करने वाले<br><b>श्रीकरः</b> — लक्ष्मी को उत्पन्न करने वाले<br><b>श्रेयः</b> — परम कल्याणस्वरूप<br><b>श्रीमान्</b> — ऐश्वर्यशाली<br><b>लोकत्रयाश्रयः</b> — तीनों लोकों के आश्रय</div>
+</div>
+</div>
+<div class="card" id="c66">
+<button class="cbtn" onclick="tog(66)">
+<span class="num" id="b66">66</span>
+<div style="flex:1"><p class="st">स्वक्षः स्वङ्गः शतानन्दो नन्दिर्ज्योतिर्गणेश्वरः । विजितात्माऽविधेयात्मा सत्कीर्तिश्छिन्नसंशयः ॥६६॥</p></div>
+<span class="arr" id="a66">&#9660;</span>
+</button>
+<div class="mp" id="p66" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 66</p>
+<div class="mt"><b>स्वक्षः</b> — सुंदर आँखों वाले<br><b>स्वङ्गः</b> — सुंदर अंग वाले<br><b>शतानन्दः</b> — सैकड़ों आनंद देने वाले<br><b>नन्दिः</b> — आनंदस्वरूप<br><b>ज्योतिर्गणेश्वरः</b> — ज्योतिर्गण के ईश्वर<br><b>विजितात्मा</b> — आत्मा को जीतने वाले<br><b>अविधेयात्मा</b> — किसी के अधीन न होने वाली आत्मा<br><b>सत्कीर्तिः</b> — सत्य कीर्ति वाले<br><b>छिन्नसंशयः</b> — सभी संशयों को काटने वाले</div>
+</div>
+</div>
+<div class="card" id="c67">
+<button class="cbtn" onclick="tog(67)">
+<span class="num" id="b67">67</span>
+<div style="flex:1"><p class="st">उदीर्णः सर्वतश्चक्षुरनीशः शाश्वतस्थिरः । भूशयो भूषणो भूतिर्विशोकः शोकनाशनः ॥६७॥</p></div>
+<span class="arr" id="a67">&#9660;</span>
+</button>
+<div class="mp" id="p67" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 67</p>
+<div class="mt"><b>उदीर्णः</b> — उत्कृष्ट<br><b>सर्वतश्चक्षुः</b> — सब ओर नेत्र वाले<br><b>अनीशः</b> — जिनके ऊपर कोई ईश नहीं<br><b>शाश्वतस्थिरः</b> — सनातन और स्थिर<br><b>भूशयः</b> — पृथ्वी पर शयन करने वाले<br><b>भूषणः</b> — सबके भूषण<br><b>भूतिः</b> — ऐश्वर्यस्वरूप<br><b>विशोकः</b> — शोकरहित<br><b>शोकनाशनः</b> — भक्तों के शोक का नाश करने वाले</div>
+</div>
+</div>
+<div class="card" id="c68">
+<button class="cbtn" onclick="tog(68)">
+<span class="num" id="b68">68</span>
+<div style="flex:1"><p class="st">अर्चिष्मानर्चितः कुम्भो विशुद्धात्मा विशोधनः । अनिरुद्धोऽप्रतिरथः प्रद्युम्नोऽमितविक्रमः ॥६८॥</p></div>
+<span class="arr" id="a68">&#9660;</span>
+</button>
+<div class="mp" id="p68" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 68</p>
+<div class="mt"><b>अर्चिष्मान्</b> — तेजोमय<br><b>अर्चितः</b> — देवताओं द्वारा अर्चित<br><b>कुम्भः</b> — कुंभस्वरूप<br><b>विशुद्धात्मा</b> — विशुद्ध आत्मा<br><b>विशोधनः</b> — पवित्र करने वाले<br><b>अनिरुद्धः</b> — रोके न जा सकने वाले<br><b>अप्रतिरथः</b> — जिनका कोई प्रतिद्वंद्वी नहीं<br><b>प्रद्युम्नः</b> — महान द्युति वाले<br><b>अमितविक्रमः</b> — असीमित पराक्रम वाले</div>
+</div>
+</div>
+<div class="card" id="c69">
+<button class="cbtn" onclick="tog(69)">
+<span class="num" id="b69">69</span>
+<div style="flex:1"><p class="st">कालनेमिनिहा वीरः शौरिः शूरजनेश्वरः । त्रिलोकात्मा त्रिलोकेशः केशवः केशिहा हरिः ॥६९॥</p></div>
+<span class="arr" id="a69">&#9660;</span>
+</button>
+<div class="mp" id="p69" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 69</p>
+<div class="mt"><b>कालनेमिनिहा</b> — कालनेमि राक्षस का वध करने वाले<br><b>वीरः</b> — वीरस्वरूप<br><b>शौरिः</b> — शूरवंश में जन्मे<br><b>शूरजनेश्वरः</b> — शूरजनों के ईश<br><b>त्रिलोकात्मा</b> — तीनों लोकों की आत्मा<br><b>त्रिलोकेशः</b> — तीनों लोकों के ईश<br><b>केशवः</b> — केशव<br><b>केशिहा</b> — केशी असुर का वध करने वाले<br><b>हरिः</b> — पापों को हरने वाले</div>
+</div>
+</div>
+<div class="card" id="c70">
+<button class="cbtn" onclick="tog(70)">
+<span class="num" id="b70">70</span>
+<div style="flex:1"><p class="st">कामदेवः कामपालः कामी कान्तः कृतागमः । अनिर्देश्यवपुर्विष्णुर्वीरोऽनन्तो धनञ्जयः ॥७०॥</p></div>
+<span class="arr" id="a70">&#9660;</span>
+</button>
+<div class="mp" id="p70" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 70</p>
+<div class="mt"><b>कामदेवः</b> — कामदेव के रूप में<br><b>कामपालः</b> — कामनाओं के पालक<br><b>कामी</b> — भक्ति के लिए कामना रखने वाले<br><b>कान्तः</b> — सुंदर<br><b>कृतागमः</b> — वेदों के रचयिता<br><b>अनिर्देश्यवपुः</b> — अवर्णनीय शरीर<br><b>विष्णुः</b> — सर्वव्यापी<br><b>वीरः</b> — वीर<br><b>अनन्तः</b> — अनंत<br><b>धनञ्जयः</b> — धन को जीतने वाले</div>
+</div>
+</div>
+<div class="card" id="c71">
+<button class="cbtn" onclick="tog(71)">
+<span class="num" id="b71">71</span>
+<div style="flex:1"><p class="st">ब्रह्मण्यो ब्रह्मकृद् ब्रह्मा ब्रह्म ब्रह्मविवर्धनः । ब्रह्मविद् ब्राह्मणो ब्रह्मी ब्रह्मज्ञो ब्राह्मणप्रियः ॥७१॥</p></div>
+<span class="arr" id="a71">&#9660;</span>
+</button>
+<div class="mp" id="p71" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 71</p>
+<div class="mt"><b>ब्रह्मण्यः</b> — ब्राह्मणों के हितकारी<br><b>ब्रह्मकृत्</b> — ब्रह्म कर्म करने वाले<br><b>ब्रह्मा</b> — ब्रह्मा के रूप में सृष्टि करने वाले<br><b>ब्रह्म</b> — परब्रह्मस्वरूप<br><b>ब्रह्मविवर्धनः</b> — ब्रह्म की वृद्धि करने वाले<br><b>ब्रह्मविद्</b> — ब्रह्म को जानने वाले<br><b>ब्राह्मणः</b> — ब्राह्मण स्वरूप<br><b>ब्रह्मी</b> — ब्रह्म शक्ति युक्त<br><b>ब्रह्मज्ञः</b> — ब्रह्म के ज्ञाता<br><b>ब्राह्मणप्रियः</b> — जिन्हें ब्राह्मण प्रिय हैं</div>
+</div>
+</div>
+<div class="card" id="c72">
+<button class="cbtn" onclick="tog(72)">
+<span class="num" id="b72">72</span>
+<div style="flex:1"><p class="st">महाक्रमो महाकर्मा महातेजा महोरगः । महाक्रतुर्महायज्वा महायज्ञो महाहविः ॥७२॥</p></div>
+<span class="arr" id="a72">&#9660;</span>
+</button>
+<div class="mp" id="p72" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 72</p>
+<div class="mt"><b>महाक्रमः</b> — महान कदम वाले<br><b>महाकर्मा</b> — महान कर्म करने वाले<br><b>महातेजाः</b> — महान तेज वाले<br><b>महोरगः</b> — शेषनाग पर विराजमान<br><b>महाक्रतुः</b> — महान यज्ञस्वरूप<br><b>महायज्वा</b> — महान यजमान<br><b>महायज्ञः</b> — महायज्ञस्वरूप<br><b>महाहविः</b> — महान हवि</div>
+</div>
+</div>
+<div class="card" id="c73">
+<button class="cbtn" onclick="tog(73)">
+<span class="num" id="b73">73</span>
+<div style="flex:1"><p class="st">स्तव्यः स्तवप्रियः स्तोत्रं स्तुतिः स्तोता रणप्रियः । पूर्णः पूरयिता पुण्यः पुण्यकीर्तिरनामयः ॥७३॥</p></div>
+<span class="arr" id="a73">&#9660;</span>
+</button>
+<div class="mp" id="p73" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 73</p>
+<div class="mt"><b>स्तव्यः</b> — स्तुति के योग्य<br><b>स्तवप्रियः</b> — जिन्हें स्तुति प्रिय है<br><b>स्तोत्रम्</b> — स्तोत्रस्वरूप<br><b>स्तुतिः</b> — स्तुतिस्वरूप<br><b>स्तोता</b> — स्तुति करने वाले<br><b>रणप्रियः</b> — जिन्हें युद्ध प्रिय है<br><b>पूर्णः</b> — पूर्ण<br><b>पूरयिता</b> — सबको पूर्ण करने वाले<br><b>पुण्यः</b> — पुण्यस्वरूप<br><b>पुण्यकीर्तिः</b> — पुण्यमय कीर्ति वाले<br><b>अनामयः</b> — रोगरहित</div>
+</div>
+</div>
+<div class="card" id="c74">
+<button class="cbtn" onclick="tog(74)">
+<span class="num" id="b74">74</span>
+<div style="flex:1"><p class="st">मनोजवस्तीर्थकरो वसुरेता वसुप्रदः । वासुदेवो बृहद्भानुरादिदेवः पुरन्दरः ॥७४॥</p></div>
+<span class="arr" id="a74">&#9660;</span>
+</button>
+<div class="mp" id="p74" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 74</p>
+<div class="mt"><b>मनोजवः</b> — मन की गति से चलने वाले<br><b>तीर्थकरः</b> — तीर्थों के निर्माता<br><b>वसुरेताः</b> — सुवर्ण के समान वीर्य वाले<br><b>वसुप्रदः</b> — धन देने वाले<br><b>वासुदेवः</b> — वसुदेव पुत्र<br><b>बृहद्भानुः</b> — विशाल प्रकाश वाले<br><b>आदिदेवः</b> — आदिदेव<br><b>पुरन्दरः</b> — पुरों का नाश करने वाले</div>
+</div>
+</div>
+<div class="card" id="c75">
+<button class="cbtn" onclick="tog(75)">
+<span class="num" id="b75">75</span>
+<div style="flex:1"><p class="st">सद्गतिः सत्कृतिः सत्ता सद्भूतिः सत्परायणः । शूरसेनो यदुश्रेष्ठः सन्निवासः सुयामुनः ॥७५॥</p></div>
+<span class="arr" id="a75">&#9660;</span>
+</button>
+<div class="mp" id="p75" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 75</p>
+<div class="mt"><b>सद्गतिः</b> — सज्जनों की गति<br><b>सत्कृतिः</b> — सत्कर्मस्वरूप<br><b>सत्ता</b> — सत्तास्वरूप<br><b>सद्भूतिः</b> — सद्भूति संपन्न<br><b>सत्परायणः</b> — सत्य के परायण<br><b>शूरसेनः</b> — शूरसेन वंश के<br><b>यदुश्रेष्ठः</b> — यदुवंश में श्रेष्ठ<br><b>सन्निवासः</b> — सबके निवास<br><b>सुयामुनः</b> — यमुना तट पर विराजमान</div>
+</div>
+</div>
+<div class="card" id="c76">
+<button class="cbtn" onclick="tog(76)">
+<span class="num" id="b76">76</span>
+<div style="flex:1"><p class="st">भूतावासो वासुदेवः सर्वासुनिलयोऽनलः । दर्पहा दर्पदो दृप्तो दुर्धरोऽथापराजितः ॥७६॥</p></div>
+<span class="arr" id="a76">&#9660;</span>
+</button>
+<div class="mp" id="p76" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 76</p>
+<div class="mt"><b>भूतावासः</b> — समस्त प्राणियों के निवास<br><b>वासुदेवः</b> — वासुदेव<br><b>सर्वासुनिलयः</b> — सब प्राणों के आश्रय<br><b>अनलः</b> — अग्निस्वरूप<br><b>दर्पहा</b> — दर्प का नाश करने वाले<br><b>दर्पदः</b> — दर्प देने वाले<br><b>दृप्तः</b> — स्वयं आनंदित<br><b>दुर्धरः</b> — जिन्हें धारण करना कठिन<br><b>अपराजितः</b> — कभी पराजित न होने वाले</div>
+</div>
+</div>
+<div class="card" id="c77">
+<button class="cbtn" onclick="tog(77)">
+<span class="num" id="b77">77</span>
+<div style="flex:1"><p class="st">विश्वमूर्तिर्महामूर्तिर्दीप्तमूर्तिरमूर्तिमान् । अनेकमूर्तिरव्यक्तः शतमूर्तिः शताननः ॥७७॥</p></div>
+<span class="arr" id="a77">&#9660;</span>
+</button>
+<div class="mp" id="p77" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 77</p>
+<div class="mt"><b>विश्वमूर्तिः</b> — विश्वस्वरूप मूर्ति<br><b>महामूर्तिः</b> — महान मूर्ति वाले<br><b>दीप्तमूर्तिः</b> — प्रकाशमान मूर्ति<br><b>अमूर्तिमान्</b> — निराकार भी<br><b>अनेकमूर्तिः</b> — अनेक रूपों वाले<br><b>अव्यक्तः</b> — अव्यक्त<br><b>शतमूर्तिः</b> — सैकड़ों मूर्तियों वाले<br><b>शताननः</b> — सैकड़ों मुखों वाले</div>
+</div>
+</div>
+<div class="card" id="c78">
+<button class="cbtn" onclick="tog(78)">
+<span class="num" id="b78">78</span>
+<div style="flex:1"><p class="st">एको नैकः सवः कः किं यत्तत्पदमनुत्तमम् । लोकबन्धुर्लोकनाथो माधवो भक्तवत्सलः ॥७८॥</p></div>
+<span class="arr" id="a78">&#9660;</span>
+</button>
+<div class="mp" id="p78" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 78</p>
+<div class="mt"><b>एकः</b> — एक<br><b>नैकः</b> — अनेक रूपों में<br><b>सवः</b> — यज्ञस्वरूप<br><b>कः</b> — ब्रह्म<br><b>किम्</b> — सब कुछ<br><b>यत्तत्पदमनुत्तमम्</b> — उत्तम पदस्वरूप<br><b>लोकबन्धुः</b> — लोकों के बंधु<br><b>लोकनाथः</b> — लोकों के नाथ<br><b>माधवः</b> — लक्ष्मीपति<br><b>भक्तवत्सलः</b> — भक्तों से स्नेही</div>
+</div>
+</div>
+<div class="card" id="c79">
+<button class="cbtn" onclick="tog(79)">
+<span class="num" id="b79">79</span>
+<div style="flex:1"><p class="st">सुवर्णवर्णो हेमाङ्गो वराङ्गश्चन्दनाङ्गदी । वीरहा विषमः शून्यो घृताशीरचलश्चलः ॥७९॥</p></div>
+<span class="arr" id="a79">&#9660;</span>
+</button>
+<div class="mp" id="p79" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 79</p>
+<div class="mt"><b>सुवर्णवर्णः</b> — सोने के समान वर्ण<br><b>हेमाङ्गः</b> — सोने के अंग वाले<br><b>वराङ्गः</b> — श्रेष्ठ अंग वाले<br><b>चन्दनाङ्गदी</b> — चंदन बाजूबंद वाले<br><b>वीरहा</b> — वीर दैत्यों का नाश करने वाले<br><b>विषमः</b> — असाधारण<br><b>शून्यः</b> — शून्यस्वरूप<br><b>घृताशीः</b> — पोषण करने वाले<br><b>अचलः</b> — अचल<br><b>चलः</b> — प्राणियों में गति</div>
+</div>
+</div>
+<div class="card" id="c80">
+<button class="cbtn" onclick="tog(80)">
+<span class="num" id="b80">80</span>
+<div style="flex:1"><p class="st">अमानी मानदो मान्यो लोकस्वामी त्रिलोकधृक् । सुमेधा मेधजो धन्यः सत्यमेधा धराधरः ॥८०॥</p></div>
+<span class="arr" id="a80">&#9660;</span>
+</button>
+<div class="mp" id="p80" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 80</p>
+<div class="mt"><b>अमानी</b> — अभिमानरहित<br><b>मानदः</b> — सम्मान देने वाले<br><b>मान्यः</b> — सम्माननीय<br><b>लोकस्वामी</b> — लोकों के स्वामी<br><b>त्रिलोकधृक्</b> — तीनों लोकों को धारण करने वाले<br><b>सुमेधाः</b> — उत्तम बुद्धि वाले<br><b>मेधजः</b> — यज्ञ से उत्पन्न<br><b>धन्यः</b> — धन्यस्वरूप<br><b>सत्यमेधाः</b> — सत्य मेधा वाले<br><b>धराधरः</b> — पृथ्वी को धारण करने वाले</div>
+</div>
+</div>
+<div class="card" id="c81">
+<button class="cbtn" onclick="tog(81)">
+<span class="num" id="b81">81</span>
+<div style="flex:1"><p class="st">तेजोवृषो द्युतिधरः सर्वशस्त्रभृतांवरः । प्रग्रहो निग्रहो व्यग्रो नैकशृङ्गो गदाग्रजः ॥८१॥</p></div>
+<span class="arr" id="a81">&#9660;</span>
+</button>
+<div class="mp" id="p81" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 81</p>
+<div class="mt"><b>तेजोवृषः</b> — तेज की वृष्टि करने वाले<br><b>द्युतिधरः</b> — दीप्ति धारण करने वाले<br><b>सर्वशस्त्रभृतांवरः</b> — सभी शस्त्रधारियों में श्रेष्ठ<br><b>प्रग्रहः</b> — सबको ग्रहण करने वाले<br><b>निग्रहः</b> — दुष्टों का निग्रह करने वाले<br><b>व्यग्रः</b> — सब कार्यों में व्यस्त<br><b>नैकशृङ्गः</b> — अनेक शृंग वाले<br><b>गदाग्रजः</b> — गदा से श्रेष्ठ</div>
+</div>
+</div>
+<div class="card" id="c82">
+<button class="cbtn" onclick="tog(82)">
+<span class="num" id="b82">82</span>
+<div style="flex:1"><p class="st">चतुर्मूर्तिश्चतुर्बाहुश्चतुर्व्यूहश्चतुर्गतिः । चतुरात्मा चतुर्भावश्चतुर्वेदविदेकपात् ॥८२॥</p></div>
+<span class="arr" id="a82">&#9660;</span>
+</button>
+<div class="mp" id="p82" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 82</p>
+<div class="mt"><b>चतुर्मूर्तिः</b> — चार मूर्तियों वाले<br><b>चतुर्बाहुः</b> — चार भुजाओं वाले<br><b>चतुर्व्यूहः</b> — वासुदेव, संकर्षण, प्रद्युम्न, अनिरुद्ध<br><b>चतुर्गतिः</b> — चार गतियों के दाता<br><b>चतुरात्मा</b> — चार रूपों में विभाजित<br><b>चतुर्भावः</b> — चार भावों के स्वरूप<br><b>चतुर्वेदवित्</b> — चारों वेदों को जानने वाले<br><b>एकपात्</b> — एक पाद से विश्व को धारण करने वाले</div>
+</div>
+</div>
+<div class="card" id="c83">
+<button class="cbtn" onclick="tog(83)">
+<span class="num" id="b83">83</span>
+<div style="flex:1"><p class="st">समावर्तोऽनिवृत्तात्मा दुर्जयो दुरतिक्रमः । दुर्लभो दुर्गमो दुर्गो दुरावासो दुरारिहा ॥८३॥</p></div>
+<span class="arr" id="a83">&#9660;</span>
+</button>
+<div class="mp" id="p83" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 83</p>
+<div class="mt"><b>समावर्तः</b> — संसार चक्र को सम्यक् घुमाने वाले<br><b>अनिवृत्तात्मा</b> — जिनकी आत्मा कभी वापस नहीं लौटती<br><b>दुर्जयः</b> — अजेय<br><b>दुरतिक्रमः</b> — जिनको लाँघना असंभव<br><b>दुर्लभः</b> — कठिनाई से प्राप्त होने वाले<br><b>दुर्गमः</b> — जहाँ पहुँचना कठिन<br><b>दुर्गः</b> — दुर्भेद्य<br><b>दुरावासः</b> — जिनका निवास दुर्लभ<br><b>दुरारिहा</b> — दुष्ट शत्रुओं का नाश करने वाले</div>
+</div>
+</div>
+<div class="card" id="c84">
+<button class="cbtn" onclick="tog(84)">
+<span class="num" id="b84">84</span>
+<div style="flex:1"><p class="st">शुभाङ्गो लोकसारङ्गः सुतन्तुस्तन्तुवर्धनः । इन्द्रकर्मा महाकर्मा कृतकर्मा कृतागमः ॥८४॥</p></div>
+<span class="arr" id="a84">&#9660;</span>
+</button>
+<div class="mp" id="p84" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 84</p>
+<div class="mt"><b>शुभाङ्गः</b> — शुभ अंग वाले<br><b>लोकसारङ्गः</b> — लोक के सार को ग्रहण करने वाले<br><b>सुतन्तुः</b> — उत्तम तंतुस्वरूप<br><b>तन्तुवर्धनः</b> — सृष्टि के तंतु को बढ़ाने वाले<br><b>इन्द्रकर्मा</b> — इंद्र के समान कर्म करने वाले<br><b>महाकर्मा</b> — महान कर्म करने वाले<br><b>कृतकर्मा</b> — जिन्होंने सब कर्म कर लिए<br><b>कृतागमः</b> — आगमों के रचयिता</div>
+</div>
+</div>
+<div class="card" id="c85">
+<button class="cbtn" onclick="tog(85)">
+<span class="num" id="b85">85</span>
+<div style="flex:1"><p class="st">उद्भवः सुन्दरः सुन्दो रत्ननाभः सुलोचनः । अर्को वाजसनः शृङ्गी जयन्तः सर्वविज्जयी ॥८५॥</p></div>
+<span class="arr" id="a85">&#9660;</span>
+</button>
+<div class="mp" id="p85" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 85</p>
+<div class="mt"><b>उद्भवः</b> — स्वयं उत्पन्न<br><b>सुन्दरः</b> — अत्यंत सुंदर<br><b>सुन्दः</b> — आनंद देने वाले<br><b>रत्ननाभः</b> — रत्न नाभि वाले<br><b>सुलोचनः</b> — सुंदर नेत्र वाले<br><b>अर्कः</b> — सूर्यस्वरूप<br><b>वाजसनः</b> — अन्न देने वाले<br><b>शृङ्गी</b> — शृंग वाले<br><b>जयन्तः</b> — सदा विजयी<br><b>सर्वविज्जयी</b> — सर्वज्ञ और विजयी</div>
+</div>
+</div>
+<div class="card" id="c86">
+<button class="cbtn" onclick="tog(86)">
+<span class="num" id="b86">86</span>
+<div style="flex:1"><p class="st">सुवर्णबिन्दुरक्षोभ्यः सर्ववागीश्वरेश्वरः । महाहृदो महागर्तो महाभूतो महानिधिः ॥८६॥</p></div>
+<span class="arr" id="a86">&#9660;</span>
+</button>
+<div class="mp" id="p86" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 86</p>
+<div class="mt"><b>सुवर्णबिन्दुः</b> — सुवर्ण बिंदुस्वरूप<br><b>अक्षोभ्यः</b> — कभी क्षुब्ध न होने वाले<br><b>सर्ववागीश्वरेश्वरः</b> — सभी वाग्देवताओं के ईश्वर<br><b>महाहृदः</b> — महासागरस्वरूप<br><b>महागर्तः</b> — महागर्त<br><b>महाभूतः</b> — महान भूत तत्व<br><b>महानिधिः</b> — महान निधि</div>
+</div>
+</div>
+<div class="card" id="c87">
+<button class="cbtn" onclick="tog(87)">
+<span class="num" id="b87">87</span>
+<div style="flex:1"><p class="st">कुमुदः कुन्दरः कुन्दः पर्जन्यः पावनोऽनिलः । अमृताशोऽमृतवपुः सर्वज्ञः सर्वतोमुखः ॥८७॥</p></div>
+<span class="arr" id="a87">&#9660;</span>
+</button>
+<div class="mp" id="p87" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 87</p>
+<div class="mt"><b>कुमुदः</b> — पृथ्वी को प्रसन्न करने वाले<br><b>कुन्दरः</b> — कुंद पुष्प के समान<br><b>कुन्दः</b> — कुंद फूल की भाँति सुंदर<br><b>पर्जन्यः</b> — मेघ के समान वर्षा करने वाले<br><b>पावनः</b> — पवित्र करने वाले<br><b>अनिलः</b> — वायुस्वरूप<br><b>अमृताशः</b> — अमृत का भोग करने वाले<br><b>अमृतवपुः</b> — अमृत के समान शरीर<br><b>सर्वज्ञः</b> — सर्वज्ञ<br><b>सर्वतोमुखः</b> — सब ओर मुख वाले</div>
+</div>
+</div>
+<div class="card" id="c88">
+<button class="cbtn" onclick="tog(88)">
+<span class="num" id="b88">88</span>
+<div style="flex:1"><p class="st">सुलभः सुव्रतः सिद्धः शत्रुजिच्छत्रुतापनः । न्यग्रोधोऽदुम्बरोऽश्वत्थश्चाणूरान्ध्रनिषूदनः ॥८८॥</p></div>
+<span class="arr" id="a88">&#9660;</span>
+</button>
+<div class="mp" id="p88" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 88</p>
+<div class="mt"><b>सुलभः</b> — भक्ति से सहज प्राप्त होने वाले<br><b>सुव्रतः</b> — उत्तम व्रत वाले<br><b>सिद्धः</b> — सिद्धस्वरूप<br><b>शत्रुजित्</b> — शत्रुओं को जीतने वाले<br><b>शत्रुतापनः</b> — शत्रुओं को ताप देने वाले<br><b>न्यग्रोधः</b> — बरगद के समान आश्रय<br><b>उदुम्बरः</b> — गूलर के समान पोषण<br><b>अश्वत्थः</b> — पीपल वृक्षस्वरूप<br><b>चाणूरान्ध्रनिषूदनः</b> — चाणूर पहलवान का वध करने वाले</div>
+</div>
+</div>
+<div class="card" id="c89">
+<button class="cbtn" onclick="tog(89)">
+<span class="num" id="b89">89</span>
+<div style="flex:1"><p class="st">सहस्रार्चिः सप्तजिह्वः सप्तैधाः सप्तवाहनः । अमूर्तिरनघोऽचिन्त्यो भयकृद्भयनाशनः ॥८९॥</p></div>
+<span class="arr" id="a89">&#9660;</span>
+</button>
+<div class="mp" id="p89" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 89</p>
+<div class="mt"><b>सहस्रार्चिः</b> — हजार ज्वालाओं वाले<br><b>सप्तजिह्वः</b> — सात अग्निज्वालाओं वाले<br><b>सप्तैधाः</b> — सात ईंधन से प्रज्ज्वलित<br><b>सप्तवाहनः</b> — सूर्य के सात वाहन वाले<br><b>अमूर्तिः</b> — निराकार<br><b>अनघः</b> — पापरहित<br><b>अचिन्त्यः</b> — चिंतन से परे<br><b>भयकृत्</b> — दुष्टों में भय उत्पन्न करने वाले<br><b>भयनाशनः</b> — भक्तों के भय का नाश करने वाले</div>
+</div>
+</div>
+<div class="card" id="c90">
+<button class="cbtn" onclick="tog(90)">
+<span class="num" id="b90">90</span>
+<div style="flex:1"><p class="st">अणुर्बृहत्कृशः स्थूलो गुणभृन्निर्गुणो महान् । अधृतः स्वधृतः स्वास्यः प्राग्वंशो वंशवर्धनः ॥९०॥</p></div>
+<span class="arr" id="a90">&#9660;</span>
+</button>
+<div class="mp" id="p90" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 90</p>
+<div class="mt"><b>अणुः</b> — अणु से भी सूक्ष्म<br><b>बृहत्</b> — ब्रह्माण्ड से भी विशाल<br><b>कृशः</b> — सूक्ष्म<br><b>स्थूलः</b> — स्थूल<br><b>गुणभृत्</b> — गुणों को धारण करने वाले<br><b>निर्गुणः</b> — गुणों से परे<br><b>महान्</b> — महान<br><b>अधृतः</b> — किसी के द्वारा धारण न किए जाने वाले<br><b>स्वधृतः</b> — स्वयं धारित<br><b>स्वास्यः</b> — सुंदर मुख वाले<br><b>प्राग्वंशः</b> — सनातन वंश के<br><b>वंशवर्धनः</b> — वंश की वृद्धि करने वाले</div>
+</div>
+</div>
+<div class="card" id="c91">
+<button class="cbtn" onclick="tog(91)">
+<span class="num" id="b91">91</span>
+<div style="flex:1"><p class="st">भारभृत् कथितो योगी योगीशः सर्वकामदः । आश्रमः श्रमणः क्षामः सुपर्णो वायुवाहनः ॥९१॥</p></div>
+<span class="arr" id="a91">&#9660;</span>
+</button>
+<div class="mp" id="p91" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 91</p>
+<div class="mt"><b>भारभृत्</b> — सृष्टि का भार वहन करने वाले<br><b>कथितः</b> — वेद में वर्णित<br><b>योगी</b> — योगस्वरूप<br><b>योगीशः</b> — योगियों के ईश<br><b>सर्वकामदः</b> — सभी इच्छाएँ पूरी करने वाले<br><b>आश्रमः</b> — सबके आश्रम<br><b>श्रमणः</b> — तपस्वी<br><b>क्षामः</b> — सूक्ष्म<br><b>सुपर्णः</b> — गरुड़ वाहन वाले<br><b>वायुवाहनः</b> — वायु वाहन वाले</div>
+</div>
+</div>
+<div class="card" id="c92">
+<button class="cbtn" onclick="tog(92)">
+<span class="num" id="b92">92</span>
+<div style="flex:1"><p class="st">धनुर्धरो धनुर्वेदो दण्डो दमयिता दमः । अपराजितः सर्वसहो नियन्ता नियमो यमः ॥९२॥</p></div>
+<span class="arr" id="a92">&#9660;</span>
+</button>
+<div class="mp" id="p92" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 92</p>
+<div class="mt"><b>धनुर्धरः</b> — धनुष धारण करने वाले<br><b>धनुर्वेदः</b> — धनुर्वेद के ज्ञाता<br><b>दण्डः</b> — दंडस्वरूप<br><b>दमयिता</b> — दमन करने वाले<br><b>दमः</b> — इंद्रिय निग्रह<br><b>अपराजितः</b> — अजेय<br><b>सर्वसहः</b> — सब कुछ सहने वाले<br><b>नियन्ता</b> — सबके नियंता<br><b>नियमः</b> — नियमस्वरूप<br><b>यमः</b> — संयमस्वरूप</div>
+</div>
+</div>
+<div class="card" id="c93">
+<button class="cbtn" onclick="tog(93)">
+<span class="num" id="b93">93</span>
+<div style="flex:1"><p class="st">सत्त्ववान् सात्त्विकः सत्यः सत्यधर्मपरायणः । अभिप्रायः प्रियार्होऽर्हः प्रियकृत् प्रीतिवर्धनः ॥९३॥</p></div>
+<span class="arr" id="a93">&#9660;</span>
+</button>
+<div class="mp" id="p93" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 93</p>
+<div class="mt"><b>सत्त्ववान्</b> — सत्त्वगुण संपन्न<br><b>सात्त्विकः</b> — सात्विक<br><b>सत्यः</b> — सत्यस्वरूप<br><b>सत्यधर्मपरायणः</b> — सत्य और धर्म के परायण<br><b>अभिप्रायः</b> — सबके अभीष्ट<br><b>प्रियार्हः</b> — प्रिय उपचार के योग्य<br><b>अर्हः</b> — पूजनीय<br><b>प्रियकृत्</b> — प्रिय करने वाले<br><b>प्रीतिवर्धनः</b> — भक्तों की प्रीति बढ़ाने वाले</div>
+</div>
+</div>
+<div class="card" id="c94">
+<button class="cbtn" onclick="tog(94)">
+<span class="num" id="b94">94</span>
+<div style="flex:1"><p class="st">विहायसगतिर्ज्योतिः सुरुचिर्हुतभुग्विभुः । रविर्विरोचनः सूर्यः सविता रविलोचनः ॥९४॥</p></div>
+<span class="arr" id="a94">&#9660;</span>
+</button>
+<div class="mp" id="p94" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 94</p>
+<div class="mt"><b>विहायसगतिः</b> — आकाश में गमन करने वाले<br><b>ज्योतिः</b> — ज्योतिस्वरूप<br><b>सुरुचिः</b> — सुंदर रुचि वाले<br><b>हुतभुक्</b> — हवन का भक्षण करने वाले<br><b>विभुः</b> — सर्वव्यापी<br><b>रविः</b> — सूर्यस्वरूप<br><b>विरोचनः</b> — विशेष प्रकाशमान<br><b>सूर्यः</b> — सूर्यस्वरूप<br><b>सविता</b> — सबको उत्पन्न करने वाले<br><b>रविलोचनः</b> — सूर्य के समान नेत्र वाले</div>
+</div>
+</div>
+<div class="card" id="c95">
+<button class="cbtn" onclick="tog(95)">
+<span class="num" id="b95">95</span>
+<div style="flex:1"><p class="st">अनन्तो हुतभुग्भोक्ता सुखदो नैकजोऽग्रजः । अनिर्विण्णः सदामर्षी लोकाधिष्ठानमद्भुतः ॥९५॥</p></div>
+<span class="arr" id="a95">&#9660;</span>
+</button>
+<div class="mp" id="p95" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 95</p>
+<div class="mt"><b>अनन्तः</b> — अनंत<br><b>हुतभुक्</b> — हवन ग्रहण करने वाले<br><b>भोक्ता</b> — सबके भोक्ता<br><b>सुखदः</b> — सुख देने वाले<br><b>नैकजः</b> — अनेक बार जन्म लेने वाले<br><b>अग्रजः</b> — सबसे पहले उत्पन्न<br><b>अनिर्विण्णः</b> — कभी खिन्न न होने वाले<br><b>सदामर्षी</b> — सदा क्षमाशील<br><b>लोकाधिष्ठानम्</b> — सभी लोकों के आधार<br><b>अद्भुतः</b> — अद्भुत</div>
+</div>
+</div>
+<div class="card" id="c96">
+<button class="cbtn" onclick="tog(96)">
+<span class="num" id="b96">96</span>
+<div style="flex:1"><p class="st">सनात्सनातनतमः कपिलः कपिरव्ययः । स्वस्तिदः स्वस्तिकृत् स्वस्ति स्वस्तिभुक् स्वस्तिदक्षिणः ॥९६॥</p></div>
+<span class="arr" id="a96">&#9660;</span>
+</button>
+<div class="mp" id="p96" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 96</p>
+<div class="mt"><b>सनात्</b> — अनादि काल से<br><b>सनातनतमः</b> — सबसे अधिक सनातन<br><b>कपिलः</b> — कपिल मुनि के रूप में<br><b>कपिः</b> — सूर्यस्वरूप<br><b>अव्ययः</b> — अव्यय<br><b>स्वस्तिदः</b> — मंगल देने वाले<br><b>स्वस्तिकृत्</b> — मंगल करने वाले<br><b>स्वस्ति</b> — स्वस्तिस्वरूप<br><b>स्वस्तिभुक्</b> — स्वस्ति का उपभोग करने वाले<br><b>स्वस्तिदक्षिणः</b> — दक्षिणा में मंगल देने वाले</div>
+</div>
+</div>
+<div class="card" id="c97">
+<button class="cbtn" onclick="tog(97)">
+<span class="num" id="b97">97</span>
+<div style="flex:1"><p class="st">अरौद्रः कुण्डली चक्री विक्रम्यूर्जितशासनः । शब्दातिगः शब्दसहः शिशिरः शर्वरीकरः ॥९७॥</p></div>
+<span class="arr" id="a97">&#9660;</span>
+</button>
+<div class="mp" id="p97" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 97</p>
+<div class="mt"><b>अरौद्रः</b> — क्रोधरहित<br><b>कुण्डली</b> — कुंडल धारण करने वाले<br><b>चक्री</b> — सुदर्शन चक्र वाले<br><b>विक्रमी</b> — पराक्रमी<br><b>ऊर्जितशासनः</b> — बलवान शासन वाले<br><b>शब्दातिगः</b> — शब्द से परे<br><b>शब्दसहः</b> — वेद को सहन करने वाले<br><b>शिशिरः</b> — शीतल<br><b>शर्वरीकरः</b> — रात्रि के निर्माता</div>
+</div>
+</div>
+<div class="card" id="c98">
+<button class="cbtn" onclick="tog(98)">
+<span class="num" id="b98">98</span>
+<div style="flex:1"><p class="st">अक्रूरः पेशलो दक्षो दक्षिणः क्षमिणांवरः । विद्वत्तमो वीतभयः पुण्यश्रवणकीर्तनः ॥९८॥</p></div>
+<span class="arr" id="a98">&#9660;</span>
+</button>
+<div class="mp" id="p98" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 98</p>
+<div class="mt"><b>अक्रूरः</b> — क्रूरतारहित<br><b>पेशलः</b> — कोमल<br><b>दक्षः</b> — कुशल<br><b>दक्षिणः</b> — उदार<br><b>क्षमिणांवरः</b> — क्षमाशीलों में श्रेष्ठ<br><b>विद्वत्तमः</b> — सबसे अधिक विद्वान<br><b>वीतभयः</b> — भयरहित<br><b>पुण्यश्रवणकीर्तनः</b> — जिनका श्रवण और कीर्तन पुण्यदायक है</div>
+</div>
+</div>
+<div class="card" id="c99">
+<button class="cbtn" onclick="tog(99)">
+<span class="num" id="b99">99</span>
+<div style="flex:1"><p class="st">उत्तारणो दुष्कृतिहा पुण्यो दुःस्वप्ननाशनः । वीरहा रक्षणः सन्तो जीवनः पर्यवस्थितः ॥९९॥</p></div>
+<span class="arr" id="a99">&#9660;</span>
+</button>
+<div class="mp" id="p99" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 99</p>
+<div class="mt"><b>उत्तारणः</b> — भवसागर से पार लगाने वाले<br><b>दुष्कृतिहा</b> — पापों का नाश करने वाले<br><b>पुण्यः</b> — पुण्यस्वरूप<br><b>दुःस्वप्ननाशनः</b> — बुरे स्वप्नों का नाश करने वाले<br><b>वीरहा</b> — असुर वीरों का वध करने वाले<br><b>रक्षणः</b> — सबकी रक्षा करने वाले<br><b>सन्तः</b> — सज्जनों के स्वरूप<br><b>जीवनः</b> — सबके जीवन<br><b>पर्यवस्थितः</b> — सर्वत्र व्याप्त</div>
+</div>
+</div>
+<div class="card" id="c100">
+<button class="cbtn" onclick="tog(100)">
+<span class="num" id="b100">100</span>
+<div style="flex:1"><p class="st">अनन्तरूपोऽनन्तश्रीर्जितमन्युर्भयापहः । चतुरश्रो गभीरात्मा विदिशो व्यादिशो दिशः ॥१००॥</p></div>
+<span class="arr" id="a100">&#9660;</span>
+</button>
+<div class="mp" id="p100" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 100</p>
+<div class="mt"><b>अनन्तरूपः</b> — अनंत रूपों वाले<br><b>अनन्तश्रीः</b> — अनंत श्री वाले<br><b>जितमन्युः</b> — क्रोध को जीतने वाले<br><b>भयापहः</b> — भय का हरण करने वाले<br><b>चतुरश्रः</b> — सुडौल<br><b>गभीरात्मा</b> — गहरी आत्मा<br><b>विदिशः</b> — विभिन्न दिशाओं के ज्ञाता<br><b>व्यादिशः</b> — व्यादेश करने वाले<br><b>दिशः</b> — दिशास्वरूप</div>
+</div>
+</div>
+<div class="card" id="c101">
+<button class="cbtn" onclick="tog(101)">
+<span class="num" id="b101">101</span>
+<div style="flex:1"><p class="st">अनादिर्भूर्भुवो लक्ष्मीः सुवीरो रुचिराङ्गदः । जननो जनजन्मादिर्भीमो भीमपराक्रमः ॥१०१॥</p></div>
+<span class="arr" id="a101">&#9660;</span>
+</button>
+<div class="mp" id="p101" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 101</p>
+<div class="mt"><b>अनादिः</b> — जिनका कोई आदि नहीं<br><b>भूर्भुवः</b> — भू और भुव लोक के स्वरूप<br><b>लक्ष्मीः</b> — लक्ष्मीस्वरूप<br><b>सुवीरः</b> — महान वीर<br><b>रुचिराङ्गदः</b> — सुंदर बाजूबंद वाले<br><b>जननः</b> — जन्म देने वाले<br><b>जनजन्मादिः</b> — जन के जन्म के आदि कारण<br><b>भीमः</b> — अत्यंत भयंकर<br><b>भीमपराक्रमः</b> — भीम पराक्रम वाले</div>
+</div>
+</div>
+<div class="card" id="c102">
+<button class="cbtn" onclick="tog(102)">
+<span class="num" id="b102">102</span>
+<div style="flex:1"><p class="st">आधारनिलयो धाता पुष्पहासः प्रजागरः । ऊर्ध्वगः सत्पथाचारः प्राणदः प्रणवः पणः ॥१०२॥</p></div>
+<span class="arr" id="a102">&#9660;</span>
+</button>
+<div class="mp" id="p102" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 102</p>
+<div class="mt"><b>आधारनिलयः</b> — सबके आधार और निलय<br><b>धाता</b> — सबको धारण करने वाले<br><b>पुष्पहासः</b> — पुष्प की भाँति मुस्कुराने वाले<br><b>प्रजागरः</b> — सदा जागरूक<br><b>ऊर्ध्वगः</b> — ऊर्ध्व गति वाले<br><b>सत्पथाचारः</b> — सत्पथ पर चलने वाले<br><b>प्राणदः</b> — प्राण देने वाले<br><b>प्रणवः</b> — ओंकारस्वरूप<br><b>पणः</b> — सर्वोत्तम व्यवहार करने वाले</div>
+</div>
+</div>
+<div class="card" id="c103">
+<button class="cbtn" onclick="tog(103)">
+<span class="num" id="b103">103</span>
+<div style="flex:1"><p class="st">प्रमाणं प्राणनिलयः प्राणभृत् प्राणजीवनः । तत्त्वं तत्त्वविदेकात्मा जन्ममृत्युजरातिगः ॥१०३॥</p></div>
+<span class="arr" id="a103">&#9660;</span>
+</button>
+<div class="mp" id="p103" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 103</p>
+<div class="mt"><b>प्रमाणम्</b> — प्रमाणस्वरूप<br><b>प्राणनिलयः</b> — प्राण के निलय<br><b>प्राणभृत्</b> — प्राण को धारण करने वाले<br><b>प्राणजीवनः</b> — प्राण से जीवन देने वाले<br><b>तत्त्वम्</b> — तत्त्वस्वरूप<br><b>तत्त्वविद्</b> — तत्त्व को जानने वाले<br><b>एकात्मा</b> — एक आत्मा<br><b>जन्ममृत्युजरातिगः</b> — जन्म-मृत्यु-वृद्धावस्था से परे</div>
+</div>
+</div>
+<div class="card" id="c104">
+<button class="cbtn" onclick="tog(104)">
+<span class="num" id="b104">104</span>
+<div style="flex:1"><p class="st">भूर्भुवःस्वस्तरुस्तारः सविता प्रपितामहः । यज्ञो यज्ञपतिर्यज्वा यज्ञाङ्गो यज्ञवाहनः ॥१०४॥</p></div>
+<span class="arr" id="a104">&#9660;</span>
+</button>
+<div class="mp" id="p104" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 104</p>
+<div class="mt"><b>भूर्भुवःस्वः</b> — तीनों व्याहृतियों के स्वरूप<br><b>तरुः</b> — तारने वाले वृक्ष<br><b>तारः</b> — भवसागर से तारने वाले<br><b>सविता</b> — सबको उत्पन्न करने वाले<br><b>प्रपितामहः</b> — ब्रह्मा के भी पितामह<br><b>यज्ञः</b> — यज्ञस्वरूप<br><b>यज्ञपतिः</b> — यज्ञ के पति<br><b>यज्वा</b> — यजमान<br><b>यज्ञाङ्गः</b> — जिनके अंग यज्ञ हैं<br><b>यज्ञवाहनः</b> — यज्ञ को वहन करने वाले</div>
+</div>
+</div>
+<div class="card" id="c105">
+<button class="cbtn" onclick="tog(105)">
+<span class="num" id="b105">105</span>
+<div style="flex:1"><p class="st">यज्ञभृद्यज्ञकृद्यज्ञी यज्ञभुग्यज्ञसाधनः । यज्ञान्तकृद्यज्ञगुह्यमन्नमन्नाद एव च ॥१०५॥</p></div>
+<span class="arr" id="a105">&#9660;</span>
+</button>
+<div class="mp" id="p105" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 105</p>
+<div class="mt"><b>यज्ञभृत्</b> — यज्ञ को धारण करने वाले<br><b>यज्ञकृत्</b> — यज्ञ करने वाले<br><b>यज्ञी</b> — यज्ञस्वामी<br><b>यज्ञभुक्</b> — यज्ञ का उपभोग करने वाले<br><b>यज्ञसाधनः</b> — यज्ञ के साधन<br><b>यज्ञान्तकृत्</b> — यज्ञ को पूर्ण करने वाले<br><b>यज्ञगुह्यम्</b> — यज्ञ के गुह्य रहस्य<br><b>अन्नम्</b> — अन्नस्वरूप<br><b>अन्नादः</b> — अन्न का भक्षण करने वाले</div>
+</div>
+</div>
+<div class="card" id="c106">
+<button class="cbtn" onclick="tog(106)">
+<span class="num" id="b106">106</span>
+<div style="flex:1"><p class="st">आत्मयोनिः स्वयंजातो वैखानः सामगायनः । देवकीनन्दनः स्रष्टा क्षितीशः पापनाशनः ॥१०६॥</p></div>
+<span class="arr" id="a106">&#9660;</span>
+</button>
+<div class="mp" id="p106" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 106</p>
+<div class="mt"><b>आत्मयोनिः</b> — अपनी आत्मा से उत्पन्न<br><b>स्वयंजातः</b> — स्वयं उत्पन्न<br><b>वैखानः</b> — वानप्रस्थ को शास्त्र देने वाले<br><b>सामगायनः</b> — सामगान करने वाले<br><b>देवकीनन्दनः</b> — देवकी के पुत्र कृष्ण<br><b>स्रष्टा</b> — सृष्टि के निर्माता<br><b>क्षितीशः</b> — पृथ्वी के ईश<br><b>पापनाशनः</b> — पापों का नाश करने वाले</div>
+</div>
+</div>
+<div class="card" id="c107">
+<button class="cbtn" onclick="tog(107)">
+<span class="num" id="b107">107</span>
+<div style="flex:1"><p class="st">शङ्खभृन्नन्दकी चक्री शार्ङ्गधन्वा गदाधरः । रथाङ्गपाणिरक्षोभ्यः सर्वप्रहरणायुधः ॥१०७॥</p></div>
+<span class="arr" id="a107">&#9660;</span>
+</button>
+<div class="mp" id="p107" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 107</p>
+<div class="mt"><b>शङ्खभृत्</b> — पाञ्चजन्य शंख धारण करने वाले<br><b>नन्दकी</b> — नंदक खड्ग धारण करने वाले<br><b>चक्री</b> — सुदर्शन चक्र धारण करने वाले<br><b>शार्ङ्गधन्वा</b> — शार्ङ्ग धनुष धारण करने वाले<br><b>गदाधरः</b> — कौमोदकी गदा धारण करने वाले<br><b>रथाङ्गपाणिः</b> — रथ के पहिए को हाथ में लिए हुए<br><b>अक्षोभ्यः</b> — अक्षुब्ध<br><b>सर्वप्रहरणायुधः</b> — सभी आयुध धारण करने वाले</div>
+</div>
+</div>
+<div class="card" id="c108">
+<button class="cbtn" onclick="tog(108)">
+<span class="num" id="b108">108</span>
+<div style="flex:1"><p class="st">वनमाली गदी शार्ङ्गी शङ्खी चक्री च नन्दकी । श्रीमान्नारायणो विष्णुर्वासुदेवोऽभिरक्षतु ॥१०८॥</p></div>
+<span class="arr" id="a108">&#9660;</span>
+</button>
+<div class="mp" id="p108" style="display:none">
+<p class="ml">हिंदी अर्थ &mdash; श्लोक 108</p>
+<div class="mt"><b>वनमाली</b> — वैजयंती माला वाले<br><b>गदी</b> — गदाधारी<br><b>शार्ङ्गी</b> — शार्ङ्ग धनुष वाले<br><b>शङ्खी</b> — शंखधारी<br><b>चक्री</b> — चक्रधारी<br><b>नन्दकी</b> — नंदक तलवार वाले<br><b>श्रीमान्</b> — ऐश्वर्यशाली<br><b>नारायणः</b> — नारायण<br><b>विष्णुः</b> — सर्वव्यापी विष्णु<br><b>वासुदेवः</b> — वासुदेव<br><br>🙏 ऐसे श्रीमान् नारायण, विष्णु और वासुदेव हमारी सदा रक्षा करें।</div>
+</div>
+</div>
+</div>
+<div id="ftr">
+<div class="fb">
+<p class="ft">🙏 फलश्रुति</p>
+<p class="fp">इति श्रीमहाभारते वैयासिक्यामनुशासनपर्वणि<br>श्रीभीष्मयुधिष्ठिरसंवादे श्रीविष्णोर्दिव्यसहस्रनामस्तोत्रं सम्पूर्णम्।</p>
+<p class="fn">इस स्तोत्र के नित्य पाठ से समस्त पापों का नाश होता है।<br>धर्म, अर्थ, काम और मोक्ष की प्राप्ति होती है।</p>
+<p class="fo">ॐ नमो भगवते वासुदेवाय 🌸</p>
+</div>
+</div>
+<script>
+var cur=null;
+function tog(n){
+  var c=document.getElementById('c'+n);
+  var p=document.getElementById('p'+n);
+  if(cur===n){c.classList.remove('open');p.style.display='none';cur=null;return;}
+  if(cur!==null){var oc=document.getElementById('c'+cur);var op=document.getElementById('p'+cur);if(oc)oc.classList.remove('open');if(op)op.style.display='none';}
+  c.classList.add('open');p.style.display='block';cur=n;
+  setTimeout(function(){c.scrollIntoView({behavior:'smooth',block:'nearest'});},30);
+}
+function dosearch(q){
+  q=q.toLowerCase();
+  var cards=document.querySelectorAll('.card');
+  var v=0;
+  cards.forEach(function(c){
+    var show=!q||c.innerText.toLowerCase().indexOf(q)>-1;
+    c.style.display=show?'':'none';
+    if(show)v++;
+  });
+  document.getElementById('bv').textContent='📖 '+v+'/108 श्लोक';
+}
+</script>
+</body>
+</html>
